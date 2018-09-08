@@ -46,5 +46,15 @@
 		<key>NSAllowsArbitraryLoads</key>
 		<true/>
 	</dict>
+	<key>MOBAppKey</key>
+	<string>1efce40996592</string>
+	<key>MOBAppSecret</key>
+	<string>38a4f8204cc784f81f9f0daaf31e02e3</string>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>wechat</string>
+		<string>mqq</string>
+		<string>weixin</string>
+	</array>
 </dict>
 </plist>

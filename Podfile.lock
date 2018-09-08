@@ -19,22 +19,26 @@ PODS:
   - SDWebImage (4.4.2):
     - SDWebImage/Core (= 4.4.2)
   - SDWebImage/Core (4.4.2)
+  - WechatOpenSDK (1.8.2)
 
 DEPENDENCIES:
   - AFNetworking
   - SDCycleScrollView (~> 1.75)
+  - WechatOpenSDK
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - AFNetworking
     - SDCycleScrollView
     - SDWebImage
+    - WechatOpenSDK
 
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
   SDCycleScrollView: 884b88f0266dd4708a0e1934975c69cb971707b1
   SDWebImage: 624d6e296c69b244bcede364c72ae0430ac14681
+  WechatOpenSDK: 676feec516a11173eafd1fe64b10d27babf28701
 
-PODFILE CHECKSUM: 4d4508b5d7a6854a1956add8b8247b50ea37bee3
+PODFILE CHECKSUM: e7cdd88f8d4dd215d340b5b4d0d6ff4907b79ebd
 
 COCOAPODS: 1.5.3

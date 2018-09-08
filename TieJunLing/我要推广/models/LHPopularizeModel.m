@@ -14,7 +14,12 @@
     [model setValuesForKeysWithDictionary:dict];
     return model;
 }
-
+- (void)setValue:(id)value forKey:(NSString *)key {
+    [super setValue:value forKey:key];
+    if ([key isEqualToString:@"invitationCode"]) {
+        self.invitationCode = [NSString stringWithFormat:@"邀请码：%@",value];
+    }
+}
 - (void)setValue:(id)value forUndefinedKey:(NSString *)key {
     
 }

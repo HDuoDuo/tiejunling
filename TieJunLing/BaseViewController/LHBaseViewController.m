@@ -21,10 +21,14 @@
 
 }
 - (void)createNavLeftItem:(NSString *)leftImageName rightItem:(NSString *)rightImageName {
-    UIBarButtonItem *leftItem = [[UIBarButtonItem alloc]initWithImage:[UIImage imageNamed:leftImageName] style:UIBarButtonItemStylePlain target:self action:@selector(leftItemTap:)];
-    self.navigationItem.leftBarButtonItem = leftItem;
-    UIBarButtonItem *rightItem = [[UIBarButtonItem alloc]initWithImage:[UIImage imageNamed:rightImageName] style:UIBarButtonItemStylePlain target:self action:@selector(rightItemTap:)];
-    self.navigationItem.rightBarButtonItem = rightItem;
+    if (leftImageName) {
+        UIBarButtonItem *leftItem = [[UIBarButtonItem alloc]initWithImage:[UIImage imageNamed:leftImageName] style:UIBarButtonItemStylePlain target:self action:@selector(leftItemTap:)];
+        self.navigationItem.leftBarButtonItem = leftItem;
+    }
+    if (rightImageName) {
+        UIBarButtonItem *rightItem = [[UIBarButtonItem alloc]initWithImage:[UIImage imageNamed:rightImageName] style:UIBarButtonItemStylePlain target:self action:@selector(rightItemTap:)];
+        self.navigationItem.rightBarButtonItem = rightItem;
+    }
     
 }
 - (void)leftItemTap:(UIBarButtonItem *)sender {

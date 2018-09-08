@@ -7,7 +7,7 @@
 //
 
 #import "LHMemberViewController.h"
-
+#import "LHPayViewController.h"
 @interface LHMemberViewController ()
 
 @end
@@ -16,9 +16,20 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.navigationController.navigationBar.hidden = false;
+    self.navigationController.navigationBar.hidden = true;
 }
-
+- (IBAction)backTap:(UIButton *)sender {
+    [self.navigationController popViewControllerAnimated:true];
+}
+- (IBAction)upGrade:(UIButton *)sender {
+    LHPayViewController *payVC = [[LHPayViewController alloc]init];
+    
+    [self.navigationController pushViewController:payVC animated:true];
+}
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    self.navigationController.navigationBar.hidden = true;
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

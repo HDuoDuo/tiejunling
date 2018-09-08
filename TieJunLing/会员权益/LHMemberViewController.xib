@@ -1,7 +1,11 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13142" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12042"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -15,8 +19,107 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="qunayiTop" translatesAutoresizingMaskIntoConstraints="NO" id="all-UT-Eau">
+                    <rect key="frame" x="0.0" y="20" width="375" height="150"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="150" id="fDn-gV-V6V"/>
+                    </constraints>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qUY-bv-aQE">
+                    <rect key="frame" x="58" y="90" width="259" height="154"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="quanyiWhite" translatesAutoresizingMaskIntoConstraints="NO" id="UiB-Hh-Ikx">
+                            <rect key="frame" x="0.0" y="0.0" width="259" height="154"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VIP会员权益" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X6d-tl-M82">
+                            <rect key="frame" x="82.5" y="37" width="95" height="20.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.22352941176470587" green="0.22352941176470587" blue="0.22352941176470587" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="￥99.99" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xVc-5D-Sy0">
+                            <rect key="frame" x="74" y="75.5" width="111.5" height="36"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                            <color key="textColor" red="0.89803921568627454" green="0.28627450980392155" blue="0.15686274509803921" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="X6d-tl-M82" firstAttribute="top" secondItem="qUY-bv-aQE" secondAttribute="top" constant="37" id="4FQ-fn-6kk"/>
+                        <constraint firstItem="X6d-tl-M82" firstAttribute="centerX" secondItem="UiB-Hh-Ikx" secondAttribute="centerX" id="VqM-zE-PDV"/>
+                        <constraint firstAttribute="bottom" secondItem="UiB-Hh-Ikx" secondAttribute="bottom" id="aPD-vp-Uny"/>
+                        <constraint firstItem="UiB-Hh-Ikx" firstAttribute="top" secondItem="qUY-bv-aQE" secondAttribute="top" id="gPc-8k-Cjj"/>
+                        <constraint firstItem="xVc-5D-Sy0" firstAttribute="centerX" secondItem="UiB-Hh-Ikx" secondAttribute="centerX" id="jrh-y7-TZe"/>
+                        <constraint firstAttribute="trailing" secondItem="UiB-Hh-Ikx" secondAttribute="trailing" id="kCH-QA-hjm"/>
+                        <constraint firstItem="xVc-5D-Sy0" firstAttribute="top" secondItem="X6d-tl-M82" secondAttribute="bottom" constant="18" id="lFV-nE-wHJ"/>
+                        <constraint firstItem="UiB-Hh-Ikx" firstAttribute="leading" secondItem="qUY-bv-aQE" secondAttribute="leading" id="qEw-Xj-7Tq"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="会员权益" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eA7-8v-0Gi">
+                    <rect key="frame" x="138.5" y="29" width="98" height="29"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mrf-MF-IkP">
+                    <rect key="frame" x="12" y="32" width="27" height="27"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="27" id="Llt-go-Nae"/>
+                        <constraint firstAttribute="height" constant="27" id="UyQ-WW-9kM"/>
+                    </constraints>
+                    <state key="normal" image="backBtn"/>
+                    <connections>
+                        <action selector="backTap:" destination="-1" eventType="touchUpInside" id="8Nm-Mu-oVf"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wbw-Cn-6Qg">
+                    <rect key="frame" x="25" y="269" width="325.5" height="31.5"/>
+                    <string key="text">升级VIP会员可成为铁军令代理推广顾问，还能享受更多VIP特权服务。</string>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" red="0.53333333333333333" green="0.53333333333333333" blue="0.53333333333333333" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D8Q-0G-Cgp">
+                    <rect key="frame" x="15" y="343.5" width="345" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="1S2-55-z3n"/>
+                        <constraint firstAttribute="width" constant="345" id="rhR-GC-TYF"/>
+                    </constraints>
+                    <state key="normal" title="立即升级" backgroundImage="shengjibtn"/>
+                    <connections>
+                        <action selector="upGrade:" destination="-1" eventType="touchUpInside" id="HET-0Y-42d"/>
+                    </connections>
+                </button>
+            </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="wbw-Cn-6Qg" firstAttribute="centerX" secondItem="Q5M-cg-NOt" secondAttribute="centerX" id="2xB-kF-pIp"/>
+                <constraint firstItem="wbw-Cn-6Qg" firstAttribute="top" secondItem="qUY-bv-aQE" secondAttribute="bottom" constant="25" id="4A9-zj-tDI"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="qUY-bv-aQE" secondAttribute="trailing" constant="58" id="5sk-8Z-7YW"/>
+                <constraint firstItem="all-UT-Eau" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="6TN-G3-Wo1"/>
+                <constraint firstItem="qUY-bv-aQE" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="58" id="6by-uM-q4p"/>
+                <constraint firstItem="all-UT-Eau" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" id="GG5-Ll-iIt"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="qUY-bv-aQE" secondAttribute="bottom" constant="423" id="IXb-vZ-JaF"/>
+                <constraint firstItem="qUY-bv-aQE" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="70" id="bDt-CI-0tZ"/>
+                <constraint firstItem="qUY-bv-aQE" firstAttribute="centerX" secondItem="all-UT-Eau" secondAttribute="centerX" id="d2X-2X-cdX"/>
+                <constraint firstItem="D8Q-0G-Cgp" firstAttribute="top" secondItem="wbw-Cn-6Qg" secondAttribute="bottom" constant="43" id="gQk-TN-xCe"/>
+                <constraint firstItem="Mrf-MF-IkP" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="12" id="hOA-sG-qSV"/>
+                <constraint firstItem="Mrf-MF-IkP" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="12" id="ld0-GT-yQc"/>
+                <constraint firstItem="D8Q-0G-Cgp" firstAttribute="centerX" secondItem="Q5M-cg-NOt" secondAttribute="centerX" id="pBJ-sA-ccw"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="all-UT-Eau" secondAttribute="trailing" id="tAz-Ki-PHY"/>
+                <constraint firstItem="eA7-8v-0Gi" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="9" id="unP-3r-eig"/>
+                <constraint firstItem="eA7-8v-0Gi" firstAttribute="centerX" secondItem="all-UT-Eau" secondAttribute="centerX" id="yu3-Dy-Byi"/>
+            </constraints>
             <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="25.5" y="51.5"/>
         </view>
     </objects>
+    <resources>
+        <image name="backBtn" width="26" height="26"/>
+        <image name="quanyiWhite" width="260" height="140"/>
+        <image name="qunayiTop" width="363" height="175"/>
+        <image name="shengjibtn" width="345" height="60"/>
+    </resources>
 </document>
