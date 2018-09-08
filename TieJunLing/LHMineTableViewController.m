@@ -9,6 +9,7 @@
 #import "LHMineTableViewController.h"
 #import "LHPopularizeViewController.h"
 #import "LHMemberViewController.h"
+#import "LHNounViewController.h"
 @interface LHMineTableViewController ()
 
 @end
@@ -41,6 +42,10 @@
     if (indexPath.row == 4) {
         LHMemberViewController *memberVC = [[LHMemberViewController alloc]init];;
         [self.navigationController pushViewController:memberVC animated:true];
+    }
+    if (indexPath.row == 5) {
+        LHNounViewController *nounVC = [[LHNounViewController alloc]init];
+        [self.navigationController pushViewController:nounVC animated:true];
     }
 }
 
