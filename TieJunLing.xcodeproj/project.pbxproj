@@ -11,13 +11,18 @@
 		3C39D6783171D2433FFF68DF /* libPods-TieJunLing.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FC018F4241393D4817F628EF /* libPods-TieJunLing.a */; };
 		A9504B513771FC353016DC59 /* libPods-TieJunLingUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C0604CDA6B1C01EE5D8FFC7 /* libPods-TieJunLingUITests.a */; };
 		FAC1E67A21421A9B004B0DAA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FAC1E67921421A9B004B0DAA /* AppDelegate.m */; };
-		FAC1E67D21421A9B004B0DAA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAC1E67C21421A9B004B0DAA /* ViewController.m */; };
 		FAC1E68021421A9B004B0DAA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAC1E67E21421A9B004B0DAA /* Main.storyboard */; };
 		FAC1E68221421A9D004B0DAA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAC1E68121421A9D004B0DAA /* Assets.xcassets */; };
 		FAC1E68521421A9D004B0DAA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAC1E68321421A9D004B0DAA /* LaunchScreen.storyboard */; };
 		FAC1E68821421A9D004B0DAA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FAC1E68721421A9D004B0DAA /* main.m */; };
 		FAC1E69221421A9E004B0DAA /* TieJunLingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FAC1E69121421A9E004B0DAA /* TieJunLingTests.m */; };
 		FAC1E69D21421A9E004B0DAA /* TieJunLingUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FAC1E69C21421A9E004B0DAA /* TieJunLingUITests.m */; };
+		FAC1E6AC214220B9004B0DAA /* LHMineTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAC1E6AB214220B9004B0DAA /* LHMineTableViewController.m */; };
+		FAC1E6B12142242F004B0DAA /* LHBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAC1E6B02142242F004B0DAA /* LHBaseViewController.m */; };
+		FAC1E7AB2142711F004B0DAA /* LHPopularizeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAC1E7A92142711F004B0DAA /* LHPopularizeViewController.m */; };
+		FAC1E7AC2142711F004B0DAA /* LHPopularizeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAC1E7AA2142711F004B0DAA /* LHPopularizeViewController.xib */; };
+		FAC1E7B121428111004B0DAA /* LHMemberViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAC1E7AF21428111004B0DAA /* LHMemberViewController.m */; };
+		FAC1E7B221428111004B0DAA /* LHMemberViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAC1E7B021428111004B0DAA /* LHMemberViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,8 +54,6 @@
 		FAC1E67521421A9B004B0DAA /* TieJunLing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TieJunLing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAC1E67821421A9B004B0DAA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FAC1E67921421A9B004B0DAA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		FAC1E67B21421A9B004B0DAA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		FAC1E67C21421A9B004B0DAA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		FAC1E67F21421A9B004B0DAA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FAC1E68121421A9D004B0DAA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FAC1E68421421A9D004B0DAA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -62,6 +65,16 @@
 		FAC1E69821421A9E004B0DAA /* TieJunLingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TieJunLingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAC1E69C21421A9E004B0DAA /* TieJunLingUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TieJunLingUITests.m; sourceTree = "<group>"; };
 		FAC1E69E21421A9E004B0DAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAC1E6AA214220B9004B0DAA /* LHMineTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LHMineTableViewController.h; sourceTree = "<group>"; };
+		FAC1E6AB214220B9004B0DAA /* LHMineTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LHMineTableViewController.m; sourceTree = "<group>"; };
+		FAC1E6AF2142242F004B0DAA /* LHBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LHBaseViewController.h; sourceTree = "<group>"; };
+		FAC1E6B02142242F004B0DAA /* LHBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LHBaseViewController.m; sourceTree = "<group>"; };
+		FAC1E7A82142711F004B0DAA /* LHPopularizeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LHPopularizeViewController.h; sourceTree = "<group>"; };
+		FAC1E7A92142711F004B0DAA /* LHPopularizeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LHPopularizeViewController.m; sourceTree = "<group>"; };
+		FAC1E7AA2142711F004B0DAA /* LHPopularizeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LHPopularizeViewController.xib; sourceTree = "<group>"; };
+		FAC1E7AE21428111004B0DAA /* LHMemberViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LHMemberViewController.h; sourceTree = "<group>"; };
+		FAC1E7AF21428111004B0DAA /* LHMemberViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LHMemberViewController.m; sourceTree = "<group>"; };
+		FAC1E7B021428111004B0DAA /* LHMemberViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LHMemberViewController.xib; sourceTree = "<group>"; };
 		FC018F4241393D4817F628EF /* libPods-TieJunLing.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TieJunLing.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -141,15 +154,18 @@
 		FAC1E67721421A9B004B0DAA /* TieJunLing */ = {
 			isa = PBXGroup;
 			children = (
+				FAC1E7AD214280BB004B0DAA /* 会员权益 */,
+				FAC1E6AE21422417004B0DAA /* BaseViewController */,
+				FAC1E6AD2142236D004B0DAA /* 我要推广 */,
 				FAC1E67821421A9B004B0DAA /* AppDelegate.h */,
 				FAC1E67921421A9B004B0DAA /* AppDelegate.m */,
-				FAC1E67B21421A9B004B0DAA /* ViewController.h */,
-				FAC1E67C21421A9B004B0DAA /* ViewController.m */,
 				FAC1E67E21421A9B004B0DAA /* Main.storyboard */,
 				FAC1E68121421A9D004B0DAA /* Assets.xcassets */,
 				FAC1E68321421A9D004B0DAA /* LaunchScreen.storyboard */,
 				FAC1E68621421A9D004B0DAA /* Info.plist */,
 				FAC1E68721421A9D004B0DAA /* main.m */,
+				FAC1E6AA214220B9004B0DAA /* LHMineTableViewController.h */,
+				FAC1E6AB214220B9004B0DAA /* LHMineTableViewController.m */,
 			);
 			path = TieJunLing;
 			sourceTree = "<group>";
@@ -170,6 +186,35 @@
 				FAC1E69E21421A9E004B0DAA /* Info.plist */,
 			);
 			path = TieJunLingUITests;
+			sourceTree = "<group>";
+		};
+		FAC1E6AD2142236D004B0DAA /* 我要推广 */ = {
+			isa = PBXGroup;
+			children = (
+				FAC1E7A82142711F004B0DAA /* LHPopularizeViewController.h */,
+				FAC1E7A92142711F004B0DAA /* LHPopularizeViewController.m */,
+				FAC1E7AA2142711F004B0DAA /* LHPopularizeViewController.xib */,
+			);
+			path = "我要推广";
+			sourceTree = "<group>";
+		};
+		FAC1E6AE21422417004B0DAA /* BaseViewController */ = {
+			isa = PBXGroup;
+			children = (
+				FAC1E6AF2142242F004B0DAA /* LHBaseViewController.h */,
+				FAC1E6B02142242F004B0DAA /* LHBaseViewController.m */,
+			);
+			path = BaseViewController;
+			sourceTree = "<group>";
+		};
+		FAC1E7AD214280BB004B0DAA /* 会员权益 */ = {
+			isa = PBXGroup;
+			children = (
+				FAC1E7AE21428111004B0DAA /* LHMemberViewController.h */,
+				FAC1E7AF21428111004B0DAA /* LHMemberViewController.m */,
+				FAC1E7B021428111004B0DAA /* LHMemberViewController.xib */,
+			);
+			path = "会员权益";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -237,6 +282,7 @@
 		FAC1E66D21421A9B004B0DAA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = LH;
 				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = macbook;
 				TargetAttributes = {
@@ -279,8 +325,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAC1E68521421A9D004B0DAA /* LaunchScreen.storyboard in Resources */,
+				FAC1E7AC2142711F004B0DAA /* LHPopularizeViewController.xib in Resources */,
 				FAC1E68221421A9D004B0DAA /* Assets.xcassets in Resources */,
 				FAC1E68021421A9B004B0DAA /* Main.storyboard in Resources */,
+				FAC1E7B221428111004B0DAA /* LHMemberViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,15 +354,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-TieJunLingTests-checkManifestLockResult.txt",
 			);
@@ -328,15 +372,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-TieJunLing-checkManifestLockResult.txt",
 			);
@@ -350,15 +390,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-TieJunLingUITests-checkManifestLockResult.txt",
 			);
@@ -374,9 +410,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FAC1E67D21421A9B004B0DAA /* ViewController.m in Sources */,
 				FAC1E68821421A9D004B0DAA /* main.m in Sources */,
+				FAC1E6AC214220B9004B0DAA /* LHMineTableViewController.m in Sources */,
+				FAC1E7B121428111004B0DAA /* LHMemberViewController.m in Sources */,
 				FAC1E67A21421A9B004B0DAA /* AppDelegate.m in Sources */,
+				FAC1E6B12142242F004B0DAA /* LHBaseViewController.m in Sources */,
+				FAC1E7AB2142711F004B0DAA /* LHPopularizeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

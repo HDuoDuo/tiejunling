@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  LHMineTableViewController.h
 //  TieJunLing
 //
 //  Created by macbook on 2018/9/7.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface LHMineTableViewController : UITableViewController
 
 @end
-
