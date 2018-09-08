@@ -34,6 +34,8 @@
 		FA2166832143A7AF0087B76B /* LHPayViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA2166812143A7AF0087B76B /* LHPayViewController.xib */; };
 		FA2166882143CBDB0087B76B /* LHNounViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA2166862143CBDB0087B76B /* LHNounViewController.m */; };
 		FA2166892143CBDB0087B76B /* LHNounViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA2166872143CBDB0087B76B /* LHNounViewController.xib */; };
+		FA21668E2143D5470087B76B /* LHDetailTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FA21668C2143D5470087B76B /* LHDetailTableViewCell.m */; };
+		FA21668F2143D5470087B76B /* LHDetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA21668D2143D5470087B76B /* LHDetailTableViewCell.xib */; };
 		FAC1E67A21421A9B004B0DAA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FAC1E67921421A9B004B0DAA /* AppDelegate.m */; };
 		FAC1E68021421A9B004B0DAA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAC1E67E21421A9B004B0DAA /* Main.storyboard */; };
 		FAC1E68221421A9D004B0DAA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAC1E68121421A9D004B0DAA /* Assets.xcassets */; };
@@ -108,6 +110,9 @@
 		FA2166852143CBDB0087B76B /* LHNounViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LHNounViewController.h; sourceTree = "<group>"; };
 		FA2166862143CBDB0087B76B /* LHNounViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LHNounViewController.m; sourceTree = "<group>"; };
 		FA2166872143CBDB0087B76B /* LHNounViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LHNounViewController.xib; sourceTree = "<group>"; };
+		FA21668B2143D5470087B76B /* LHDetailTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LHDetailTableViewCell.h; sourceTree = "<group>"; };
+		FA21668C2143D5470087B76B /* LHDetailTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LHDetailTableViewCell.m; sourceTree = "<group>"; };
+		FA21668D2143D5470087B76B /* LHDetailTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LHDetailTableViewCell.xib; sourceTree = "<group>"; };
 		FAC1E67521421A9B004B0DAA /* TieJunLing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TieJunLing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAC1E67821421A9B004B0DAA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FAC1E67921421A9B004B0DAA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -376,11 +381,22 @@
 		FA2166842143CB9E0087B76B /* 我的钱包 */ = {
 			isa = PBXGroup;
 			children = (
+				FA21668A2143D50F0087B76B /* cell */,
 				FA2166852143CBDB0087B76B /* LHNounViewController.h */,
 				FA2166862143CBDB0087B76B /* LHNounViewController.m */,
 				FA2166872143CBDB0087B76B /* LHNounViewController.xib */,
 			);
 			path = "我的钱包";
+			sourceTree = "<group>";
+		};
+		FA21668A2143D50F0087B76B /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				FA21668B2143D5470087B76B /* LHDetailTableViewCell.h */,
+				FA21668C2143D5470087B76B /* LHDetailTableViewCell.m */,
+				FA21668D2143D5470087B76B /* LHDetailTableViewCell.xib */,
+			);
+			path = cell;
 			sourceTree = "<group>";
 		};
 		FAC1E66C21421A9B004B0DAA = {
@@ -589,6 +605,7 @@
 				FA216650214392E90087B76B /* ShareSDKUI.bundle in Resources */,
 				FAC1E68021421A9B004B0DAA /* Main.storyboard in Resources */,
 				FA21664B214392E90087B76B /* README.txt in Resources */,
+				FA21668F2143D5470087B76B /* LHDetailTableViewCell.xib in Resources */,
 				FAC1E7B221428111004B0DAA /* LHMemberViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -671,6 +688,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA21668E2143D5470087B76B /* LHDetailTableViewCell.m in Sources */,
 				FA21660221435A640087B76B /* LHNetworking.m in Sources */,
 				FAC1E68821421A9D004B0DAA /* main.m in Sources */,
 				FA21660921435F610087B76B /* LHPopularizeModel.m in Sources */,

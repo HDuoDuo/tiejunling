@@ -58,7 +58,7 @@
                     <rect key="frame" x="0.0" y="69" width="375" height="176"/>
                     <subviews>
                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="qunayiTop" translatesAutoresizingMaskIntoConstraints="NO" id="RMQ-RZ-2RK">
-                            <rect key="frame" x="0.0" y="0.0" width="375" height="176"/>
+                            <rect key="frame" x="6" y="0.0" width="363" height="176"/>
                         </imageView>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我的奖金" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bsD-au-Cxl">
                             <rect key="frame" x="161" y="14" width="53.5" height="16"/>
@@ -91,11 +91,11 @@
                         <constraint firstItem="8D4-dP-AzU" firstAttribute="top" secondItem="rcQ-Jm-Zlu" secondAttribute="bottom" constant="16" id="P5x-4N-5Ap"/>
                         <constraint firstItem="8D4-dP-AzU" firstAttribute="centerX" secondItem="RMQ-RZ-2RK" secondAttribute="centerX" id="VAb-Gr-2Wx"/>
                         <constraint firstAttribute="bottom" secondItem="RMQ-RZ-2RK" secondAttribute="bottom" id="WXK-8i-9Nj"/>
-                        <constraint firstItem="RMQ-RZ-2RK" firstAttribute="leading" secondItem="HDn-AW-rxJ" secondAttribute="leading" id="kQ6-sP-1UK"/>
+                        <constraint firstItem="RMQ-RZ-2RK" firstAttribute="leading" secondItem="HDn-AW-rxJ" secondAttribute="leading" constant="6" id="kQ6-sP-1UK"/>
                         <constraint firstItem="rcQ-Jm-Zlu" firstAttribute="top" secondItem="bsD-au-Cxl" secondAttribute="bottom" constant="32" id="lvj-of-cqP"/>
                         <constraint firstItem="RMQ-RZ-2RK" firstAttribute="top" secondItem="HDn-AW-rxJ" secondAttribute="top" id="sg0-aj-bV8"/>
                         <constraint firstItem="rcQ-Jm-Zlu" firstAttribute="centerX" secondItem="RMQ-RZ-2RK" secondAttribute="centerX" id="tqd-ex-aLc"/>
-                        <constraint firstAttribute="trailing" secondItem="RMQ-RZ-2RK" secondAttribute="trailing" id="yX5-94-rP7"/>
+                        <constraint firstAttribute="trailing" secondItem="RMQ-RZ-2RK" secondAttribute="trailing" constant="6" id="yX5-94-rP7"/>
                     </constraints>
                 </view>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="1BH-vE-vPa">
