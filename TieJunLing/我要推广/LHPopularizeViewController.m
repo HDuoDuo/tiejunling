@@ -7,13 +7,16 @@
 //
 
 #import "LHPopularizeViewController.h"
-
+#import "LHPopularizeViewModel.h"
+#import <UIImageView+WebCache.h>
 @interface LHPopularizeViewController ()
 @property (weak, nonatomic) IBOutlet UIImageView *iconImage;
 @property (weak, nonatomic) IBOutlet UILabel *userNickName;
 @property (weak, nonatomic) IBOutlet UILabel *inviteNum;
 @property (weak, nonatomic) IBOutlet UIImageView *inviteImage;
 @property (weak, nonatomic) IBOutlet UIView *secondBackgroundView;
+
+@property(nonatomic,strong)LHPopularizeViewModel *popViewModel;
 
 @end
 
@@ -23,6 +26,18 @@
     [super viewDidLoad];
     self.secondBackgroundView.layer.masksToBounds = true;
     self.secondBackgroundView.layer.cornerRadius = 15;
+    self.popViewModel = [[LHPopularizeViewModel alloc]init];
+    __weak typeof(self) weakSelf = self;
+    [self.popViewModel getPopularData:^{
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [weakSelf createUI];
+        });
+    }];
+}
+- (void)createUI {
+    [self.iconImage sd_setImageWithURL:[NSURL URLWithString:self.popViewModel.popularModel.headImg]];
+    NSLog(@"%@",self.popViewModel.popularModel.headImg);
+    [self.inviteImage sd_setImageWithURL:[NSURL URLWithString:self.popViewModel.popularModel.QRcode]];
 }
 - (IBAction)backBtnTap:(UIButton *)sender {//返回
     [self.navigationController popViewControllerAnimated:true];

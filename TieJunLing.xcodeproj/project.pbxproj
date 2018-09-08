@@ -10,6 +10,9 @@
 		36ED677F993E6538A651877F /* libPods-TieJunLingTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0589B9165F24321C85290190 /* libPods-TieJunLingTests.a */; };
 		3C39D6783171D2433FFF68DF /* libPods-TieJunLing.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FC018F4241393D4817F628EF /* libPods-TieJunLing.a */; };
 		A9504B513771FC353016DC59 /* libPods-TieJunLingUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C0604CDA6B1C01EE5D8FFC7 /* libPods-TieJunLingUITests.a */; };
+		FA21660221435A640087B76B /* LHNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = FA21660021435A640087B76B /* LHNetworking.m */; };
+		FA21660621435EB60087B76B /* LHPopularizeViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FA21660521435EB60087B76B /* LHPopularizeViewModel.m */; };
+		FA21660921435F610087B76B /* LHPopularizeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FA21660821435F610087B76B /* LHPopularizeModel.m */; };
 		FAC1E67A21421A9B004B0DAA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FAC1E67921421A9B004B0DAA /* AppDelegate.m */; };
 		FAC1E68021421A9B004B0DAA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAC1E67E21421A9B004B0DAA /* Main.storyboard */; };
 		FAC1E68221421A9D004B0DAA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAC1E68121421A9D004B0DAA /* Assets.xcassets */; };
@@ -51,6 +54,13 @@
 		7E076E91A8D61C1B0C53A874 /* Pods-TieJunLing.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TieJunLing.release.xcconfig"; path = "Pods/Target Support Files/Pods-TieJunLing/Pods-TieJunLing.release.xcconfig"; sourceTree = "<group>"; };
 		D894852A93A7FD53B2D57A9E /* Pods-TieJunLingUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TieJunLingUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TieJunLingUITests/Pods-TieJunLingUITests.release.xcconfig"; sourceTree = "<group>"; };
 		DE92B1E161462339CE06628A /* Pods-TieJunLing.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TieJunLing.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TieJunLing/Pods-TieJunLing.debug.xcconfig"; sourceTree = "<group>"; };
+		FA2165FF214359270087B76B /* TJL-PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TJL-PrefixHeader.pch"; sourceTree = "<group>"; };
+		FA21660021435A640087B76B /* LHNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LHNetworking.m; sourceTree = "<group>"; };
+		FA21660121435A640087B76B /* LHNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LHNetworking.h; sourceTree = "<group>"; };
+		FA21660421435EB60087B76B /* LHPopularizeViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LHPopularizeViewModel.h; sourceTree = "<group>"; };
+		FA21660521435EB60087B76B /* LHPopularizeViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LHPopularizeViewModel.m; sourceTree = "<group>"; };
+		FA21660721435F610087B76B /* LHPopularizeModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LHPopularizeModel.h; sourceTree = "<group>"; };
+		FA21660821435F610087B76B /* LHPopularizeModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LHPopularizeModel.m; sourceTree = "<group>"; };
 		FAC1E67521421A9B004B0DAA /* TieJunLing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TieJunLing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAC1E67821421A9B004B0DAA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FAC1E67921421A9B004B0DAA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -129,6 +139,54 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		FA2165FC214357DE0087B76B /* supportFiles */ = {
+			isa = PBXGroup;
+			children = (
+				FAC1E67821421A9B004B0DAA /* AppDelegate.h */,
+				FAC1E67921421A9B004B0DAA /* AppDelegate.m */,
+				FAC1E68121421A9D004B0DAA /* Assets.xcassets */,
+				FAC1E68621421A9D004B0DAA /* Info.plist */,
+				FAC1E68721421A9D004B0DAA /* main.m */,
+				FA2165FF214359270087B76B /* TJL-PrefixHeader.pch */,
+			);
+			name = supportFiles;
+			sourceTree = "<group>";
+		};
+		FA2165FD214358240087B76B /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				FA2165FE214358300087B76B /* NetWorking */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		FA2165FE214358300087B76B /* NetWorking */ = {
+			isa = PBXGroup;
+			children = (
+				FA21660121435A640087B76B /* LHNetworking.h */,
+				FA21660021435A640087B76B /* LHNetworking.m */,
+			);
+			path = NetWorking;
+			sourceTree = "<group>";
+		};
+		FA21660321435E910087B76B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				FA21660421435EB60087B76B /* LHPopularizeViewModel.h */,
+				FA21660521435EB60087B76B /* LHPopularizeViewModel.m */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		FA21660A2143613A0087B76B /* models */ = {
+			isa = PBXGroup;
+			children = (
+				FA21660721435F610087B76B /* LHPopularizeModel.h */,
+				FA21660821435F610087B76B /* LHPopularizeModel.m */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
 		FAC1E66C21421A9B004B0DAA = {
 			isa = PBXGroup;
 			children = (
@@ -154,16 +212,13 @@
 		FAC1E67721421A9B004B0DAA /* TieJunLing */ = {
 			isa = PBXGroup;
 			children = (
-				FAC1E7AD214280BB004B0DAA /* 会员权益 */,
+				FA2165FD214358240087B76B /* Tools */,
+				FA2165FC214357DE0087B76B /* supportFiles */,
 				FAC1E6AE21422417004B0DAA /* BaseViewController */,
 				FAC1E6AD2142236D004B0DAA /* 我要推广 */,
-				FAC1E67821421A9B004B0DAA /* AppDelegate.h */,
-				FAC1E67921421A9B004B0DAA /* AppDelegate.m */,
+				FAC1E7AD214280BB004B0DAA /* 会员权益 */,
 				FAC1E67E21421A9B004B0DAA /* Main.storyboard */,
-				FAC1E68121421A9D004B0DAA /* Assets.xcassets */,
 				FAC1E68321421A9D004B0DAA /* LaunchScreen.storyboard */,
-				FAC1E68621421A9D004B0DAA /* Info.plist */,
-				FAC1E68721421A9D004B0DAA /* main.m */,
 				FAC1E6AA214220B9004B0DAA /* LHMineTableViewController.h */,
 				FAC1E6AB214220B9004B0DAA /* LHMineTableViewController.m */,
 			);
@@ -191,6 +246,8 @@
 		FAC1E6AD2142236D004B0DAA /* 我要推广 */ = {
 			isa = PBXGroup;
 			children = (
+				FA21660A2143613A0087B76B /* models */,
+				FA21660321435E910087B76B /* ViewModel */,
 				FAC1E7A82142711F004B0DAA /* LHPopularizeViewController.h */,
 				FAC1E7A92142711F004B0DAA /* LHPopularizeViewController.m */,
 				FAC1E7AA2142711F004B0DAA /* LHPopularizeViewController.xib */,
@@ -410,10 +467,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA21660221435A640087B76B /* LHNetworking.m in Sources */,
 				FAC1E68821421A9D004B0DAA /* main.m in Sources */,
+				FA21660921435F610087B76B /* LHPopularizeModel.m in Sources */,
 				FAC1E6AC214220B9004B0DAA /* LHMineTableViewController.m in Sources */,
 				FAC1E7B121428111004B0DAA /* LHMemberViewController.m in Sources */,
 				FAC1E67A21421A9B004B0DAA /* AppDelegate.m in Sources */,
+				FA21660621435EB60087B76B /* LHPopularizeViewModel.m in Sources */,
 				FAC1E6B12142242F004B0DAA /* LHBaseViewController.m in Sources */,
 				FAC1E7AB2142711F004B0DAA /* LHPopularizeViewController.m in Sources */,
 			);
@@ -587,6 +647,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/TieJunLing/TJL-PrefixHeader.pch";
 				INFOPLIST_FILE = TieJunLing/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -606,6 +667,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/TieJunLing/TJL-PrefixHeader.pch";
 				INFOPLIST_FILE = TieJunLing/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
