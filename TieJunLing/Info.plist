@@ -56,5 +56,12 @@
 		<string>mqq</string>
 		<string>weixin</string>
 	</array>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleURLName</key>
+			<string>wxdefc7911e2aa1719</string>
+		</dict>
+	</array>
 </dict>
 </plist>

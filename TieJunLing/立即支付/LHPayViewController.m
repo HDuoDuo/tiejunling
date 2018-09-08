@@ -7,8 +7,8 @@
 //
 
 #import "LHPayViewController.h"
-
-@interface LHPayViewController ()
+#import "WXApi.h"
+@interface LHPayViewController ()<WXApiDelegate>
 @property (weak, nonatomic) IBOutlet UIButton *weiXinBtn;
 @property (weak, nonatomic) IBOutlet UIButton *zhifubaoBtn;
 @property(nonatomic,assign)BOOL isWeiXin;
@@ -42,12 +42,21 @@
                             };
     [[LHNetworking shareInstance]requestWith:Post URL:@"http://192.168.3.53:8081/app/controller/pay/wxpay" parameters:parameter progress:nil success:^(id response) {
         NSDictionary *jsonData = [NSJSONSerialization JSONObjectWithData:response options:NSJSONReadingMutableLeaves error:nil];
-        NSDictionary *dict = jsonData[@"data"];
-        
+        NSString *dict = jsonData[@"msg"];
+        NSLog(@"%@",dict);
+        //发起支付
+        BaseReq *req = [[BaseReq alloc]init];
+        [WXApi sendReq:req];
     } failure:^(NSError *err) {
-        
     }];
 }
+//支付回调
+- (void)onReq:(BaseReq *)req {
+}
+- (void)onResp:(BaseResp *)resp {
+    
+}
+
 - (IBAction)zhifubaoTap:(UIButton *)sender {
     sender.selected = !sender.selected;
     self.weiXinBtn.selected = !sender.selected;
