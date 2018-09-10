@@ -10,6 +10,7 @@
 #import "LHDetailTableViewCell.h"
 #import "LHNounViewModel.h"
 #import <QFDatePickerView.h>
+#import "LHOutMoneyViewController.h"
 static NSString *cellIdentifier = @"LHDetailTableViewCellIdentifier";
 @interface LHNounViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UILabel *moneyLabel;
@@ -67,7 +68,8 @@ static NSString *cellIdentifier = @"LHDetailTableViewCellIdentifier";
 - (IBAction)myWallet:(UIButton *)sender {
 }
 - (IBAction)outMoney:(UIButton *)sender {
-    
+    LHOutMoneyViewController *outMoneyVC = [[LHOutMoneyViewController alloc]init];
+    [self.navigationController pushViewController:outMoneyVC animated:true];
 }
 //时间选择器
 - (IBAction)timePicker:(UIButton *)sender {
