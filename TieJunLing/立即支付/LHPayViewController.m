@@ -7,7 +7,7 @@
 //
 
 #import "LHPayViewController.h"
-#import "WXApi.h"
+#import <WXApi.h>
 @interface LHPayViewController ()<WXApiDelegate>
 @property (weak, nonatomic) IBOutlet UIButton *weiXinBtn;
 @property (weak, nonatomic) IBOutlet UIButton *zhifubaoBtn;
@@ -42,19 +42,42 @@
                             };
     [[LHNetworking shareInstance]requestWith:Post URL:@"http://192.168.3.53:8081/app/controller/pay/wxpay" parameters:parameter progress:nil success:^(id response) {
         NSDictionary *jsonData = [NSJSONSerialization JSONObjectWithData:response options:NSJSONReadingMutableLeaves error:nil];
-        NSString *dict = jsonData[@"msg"];
-        NSLog(@"%@",dict);
-        //发起支付
-        BaseReq *req = [[BaseReq alloc]init];
-        [WXApi sendReq:req];
+        NSNumber *code = (NSNumber *)jsonData[@"code"];
+        NSInteger rCode = [code integerValue];
+        NSDictionary *dataDict = jsonData[@"data"];
+        if (rCode == 200) {
+            //发起支付
+            PayReq *req = [[PayReq alloc] init];
+            req.partnerId = dataDict[@"mch_id"];
+            req.prepayId= dataDict[@"prepay_id"];
+            req.package = dataDict[@"package"];
+            req.nonceStr= dataDict[@"nonce_str"];
+            req.timeStamp= (uint32_t)dataDict[@"timestamp"];
+            req.sign= dataDict[@"sign"];
+            [WXApi sendReq:req];
+        }
     } failure:^(NSError *err) {
+        NSLog(@"请求失败");
     }];
 }
 //支付回调
 - (void)onReq:(BaseReq *)req {
+    
 }
 - (void)onResp:(BaseResp *)resp {
-    
+    NSLog(@"%d",resp.errCode);
+    if ([resp isKindOfClass:[PayResp class]]){
+        PayResp*response=(PayResp*)resp;
+        switch(response.errCode){
+            case WXSuccess:
+                //服务器端查询支付通知或查询API返回的结果再提示成功
+                NSLog(@"支付成功");
+                break;
+            default:
+                NSLog(@"支付失败，retcode=%d",resp.errCode);
+                break;
+        }
+    }
 }
 
 - (IBAction)zhifubaoTap:(UIButton *)sender {

@@ -11,7 +11,7 @@ target 'TieJunLing' do
     pod 'SDCycleScrollView','~> 1.75'
     pod 'AFNetworking'
     pod 'WechatOpenSDK'
-
+    pod 'QFDatePicker'
 
 
 

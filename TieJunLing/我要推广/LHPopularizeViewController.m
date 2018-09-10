@@ -8,7 +8,6 @@
 
 #import "LHPopularizeViewController.h"
 #import "LHPopularizeViewModel.h"
-#import <UIImageView+WebCache.h>
 #import <ShareSDK/ShareSDK.h>
 #import <ShareSDKUI/ShareSDK+SSUI.h>
 @interface LHPopularizeViewController ()

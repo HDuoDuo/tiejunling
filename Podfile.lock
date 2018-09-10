@@ -14,6 +14,7 @@ PODS:
   - AFNetworking/Serialization (3.2.1)
   - AFNetworking/UIKit (3.2.1):
     - AFNetworking/NSURLSession
+  - QFDatePicker (0.1.2)
   - SDCycleScrollView (1.75):
     - SDWebImage (>= 4.0.0)
   - SDWebImage (4.4.2):
@@ -23,22 +24,25 @@ PODS:
 
 DEPENDENCIES:
   - AFNetworking
+  - QFDatePicker
   - SDCycleScrollView (~> 1.75)
   - WechatOpenSDK
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - AFNetworking
+    - QFDatePicker
     - SDCycleScrollView
     - SDWebImage
     - WechatOpenSDK
 
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
+  QFDatePicker: 2750c489dade86a7745630ddcfe673002ef18f98
   SDCycleScrollView: 884b88f0266dd4708a0e1934975c69cb971707b1
   SDWebImage: 624d6e296c69b244bcede364c72ae0430ac14681
   WechatOpenSDK: 676feec516a11173eafd1fe64b10d27babf28701
 
-PODFILE CHECKSUM: e7cdd88f8d4dd215d340b5b4d0d6ff4907b79ebd
+PODFILE CHECKSUM: 550909c56c3697d827ff0f0040260aebbf352821
 
 COCOAPODS: 1.5.3
