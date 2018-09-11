@@ -8,6 +8,7 @@
 
 #import "LHPayViewController.h"
 #import <WXApi.h>
+#import <AlipaySDK/AlipaySDK.h>
 @interface LHPayViewController ()<WXApiDelegate>
 @property (weak, nonatomic) IBOutlet UIButton *weiXinBtn;
 @property (weak, nonatomic) IBOutlet UIButton *zhifubaoBtn;
@@ -33,9 +34,32 @@
         //调起微信支付
         [self weixinzhifu];
     }else {
-        NSLog(@"不是微信");
+        [self zhifubaozhifu];
     }
 }
+//支付宝支付
+- (void)zhifubaozhifu {
+    NSDictionary *parameter = @{@"uid":@"108",
+                            @"token":@"f5a544f6d3e7cc24b6119a12a701bda6"
+                            };
+    [[LHNetworking shareInstance]requestWith:Post URL:@"http://192.168.3.53:8081/app/controller/alipay/alipay" parameters:parameter progress:nil success:^(id response) {
+        NSDictionary *jsonData = [NSJSONSerialization JSONObjectWithData:response options:NSJSONReadingMutableLeaves error:nil];
+        NSNumber *code = (NSNumber *)jsonData[@"code"];
+        NSInteger rCode = [code integerValue];
+        NSString *orderString = jsonData[@"data"];
+        if (rCode == 200) {
+            //发起支付宝支付
+            NSString *appScheme = @"alisdkdemo";
+            // NOTE: 调用支付结果开始支付
+            [[AlipaySDK defaultService] payOrder:orderString fromScheme:appScheme callback:^(NSDictionary *resultDic) {
+                NSLog(@"reslut = %@",resultDic);
+            }];
+        }
+    } failure:^(NSError *err) {
+        NSLog(@"请求失败");
+    }];
+}
+//微信支付
 - (void)weixinzhifu {//请求订单
     NSDictionary *parameter = @{@"uid":@"108",
                              @"token":@"f5a544f6d3e7cc24b6119a12a701bda6"
@@ -52,7 +76,8 @@
             req.prepayId= dataDict[@"prepay_id"];
             req.package = dataDict[@"package"];
             req.nonceStr= dataDict[@"nonce_str"];
-            req.timeStamp= (uint32_t)dataDict[@"timestamp"];
+            NSString *timeStampStr = dataDict[@"timestamp"];
+            req.timeStamp= (uint32_t)[timeStampStr intValue];
             req.sign= dataDict[@"sign"];
             [WXApi sendReq:req];
         }
