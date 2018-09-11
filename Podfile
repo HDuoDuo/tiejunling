@@ -12,6 +12,7 @@ target 'TieJunLing' do
     pod 'AFNetworking'
     pod 'WechatOpenSDK'
     pod 'QFDatePicker'
+    pod 'AliyunOSSiOS'
 
 
 

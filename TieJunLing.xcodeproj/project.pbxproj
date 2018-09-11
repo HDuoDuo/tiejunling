@@ -56,6 +56,16 @@
 		FA6CDD9921475EE800BB6B9E /* LHFetchMoneyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA6CDD9721475EE800BB6B9E /* LHFetchMoneyViewController.xib */; };
 		FA6CDD9F2147655200BB6B9E /* LHFetchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA6CDD9D2147655200BB6B9E /* LHFetchViewController.m */; };
 		FA6CDDA02147655200BB6B9E /* LHFetchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA6CDD9E2147655200BB6B9E /* LHFetchViewController.xib */; };
+		FA6CDDA52147801700BB6B9E /* LHRealNameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA6CDDA32147801700BB6B9E /* LHRealNameViewController.m */; };
+		FA6CDDA62147801700BB6B9E /* LHRealNameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA6CDDA42147801700BB6B9E /* LHRealNameViewController.xib */; };
+		FA6CDDAB2147B89200BB6B9E /* LHMyTeamViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA6CDDA92147B89200BB6B9E /* LHMyTeamViewController.m */; };
+		FA6CDDAC2147B89200BB6B9E /* LHMyTeamViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA6CDDAA2147B89200BB6B9E /* LHMyTeamViewController.xib */; };
+		FA6CDDB12147B9F300BB6B9E /* LHTeamTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FA6CDDAF2147B9F300BB6B9E /* LHTeamTableViewCell.m */; };
+		FA6CDDB22147B9F300BB6B9E /* LHTeamTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA6CDDB02147B9F300BB6B9E /* LHTeamTableViewCell.xib */; };
+		FA6CDDB62147BF4500BB6B9E /* LHTeamMemberTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FA6CDDB42147BF4500BB6B9E /* LHTeamMemberTableViewCell.m */; };
+		FA6CDDB72147BF4500BB6B9E /* LHTeamMemberTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA6CDDB52147BF4500BB6B9E /* LHTeamMemberTableViewCell.xib */; };
+		FA6CDDBB2147C34100BB6B9E /* LHAllTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FA6CDDB92147C34100BB6B9E /* LHAllTableViewCell.m */; };
+		FA6CDDBC2147C34100BB6B9E /* LHAllTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA6CDDBA2147C34100BB6B9E /* LHAllTableViewCell.xib */; };
 		FAC1E67A21421A9B004B0DAA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FAC1E67921421A9B004B0DAA /* AppDelegate.m */; };
 		FAC1E68021421A9B004B0DAA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAC1E67E21421A9B004B0DAA /* Main.storyboard */; };
 		FAC1E68221421A9D004B0DAA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAC1E68121421A9D004B0DAA /* Assets.xcassets */; };
@@ -158,6 +168,21 @@
 		FA6CDD9C2147655200BB6B9E /* LHFetchViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LHFetchViewController.h; sourceTree = "<group>"; };
 		FA6CDD9D2147655200BB6B9E /* LHFetchViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LHFetchViewController.m; sourceTree = "<group>"; };
 		FA6CDD9E2147655200BB6B9E /* LHFetchViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LHFetchViewController.xib; sourceTree = "<group>"; };
+		FA6CDDA22147801700BB6B9E /* LHRealNameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LHRealNameViewController.h; sourceTree = "<group>"; };
+		FA6CDDA32147801700BB6B9E /* LHRealNameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LHRealNameViewController.m; sourceTree = "<group>"; };
+		FA6CDDA42147801700BB6B9E /* LHRealNameViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LHRealNameViewController.xib; sourceTree = "<group>"; };
+		FA6CDDA82147B89200BB6B9E /* LHMyTeamViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LHMyTeamViewController.h; sourceTree = "<group>"; };
+		FA6CDDA92147B89200BB6B9E /* LHMyTeamViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LHMyTeamViewController.m; sourceTree = "<group>"; };
+		FA6CDDAA2147B89200BB6B9E /* LHMyTeamViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LHMyTeamViewController.xib; sourceTree = "<group>"; };
+		FA6CDDAE2147B9F300BB6B9E /* LHTeamTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LHTeamTableViewCell.h; sourceTree = "<group>"; };
+		FA6CDDAF2147B9F300BB6B9E /* LHTeamTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LHTeamTableViewCell.m; sourceTree = "<group>"; };
+		FA6CDDB02147B9F300BB6B9E /* LHTeamTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LHTeamTableViewCell.xib; sourceTree = "<group>"; };
+		FA6CDDB32147BF4500BB6B9E /* LHTeamMemberTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LHTeamMemberTableViewCell.h; sourceTree = "<group>"; };
+		FA6CDDB42147BF4500BB6B9E /* LHTeamMemberTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LHTeamMemberTableViewCell.m; sourceTree = "<group>"; };
+		FA6CDDB52147BF4500BB6B9E /* LHTeamMemberTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LHTeamMemberTableViewCell.xib; sourceTree = "<group>"; };
+		FA6CDDB82147C34100BB6B9E /* LHAllTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LHAllTableViewCell.h; sourceTree = "<group>"; };
+		FA6CDDB92147C34100BB6B9E /* LHAllTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LHAllTableViewCell.m; sourceTree = "<group>"; };
+		FA6CDDBA2147C34100BB6B9E /* LHAllTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LHAllTableViewCell.xib; sourceTree = "<group>"; };
 		FAC1E67521421A9B004B0DAA /* TieJunLing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TieJunLing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAC1E67821421A9B004B0DAA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FAC1E67921421A9B004B0DAA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -544,6 +569,43 @@
 			path = "提现微信";
 			sourceTree = "<group>";
 		};
+		FA6CDDA121477F6900BB6B9E /* 实名认证 */ = {
+			isa = PBXGroup;
+			children = (
+				FA6CDDA22147801700BB6B9E /* LHRealNameViewController.h */,
+				FA6CDDA32147801700BB6B9E /* LHRealNameViewController.m */,
+				FA6CDDA42147801700BB6B9E /* LHRealNameViewController.xib */,
+			);
+			path = "实名认证";
+			sourceTree = "<group>";
+		};
+		FA6CDDA72147B87C00BB6B9E /* 我的团队 */ = {
+			isa = PBXGroup;
+			children = (
+				FA6CDDAD2147B9D900BB6B9E /* cell */,
+				FA6CDDA82147B89200BB6B9E /* LHMyTeamViewController.h */,
+				FA6CDDA92147B89200BB6B9E /* LHMyTeamViewController.m */,
+				FA6CDDAA2147B89200BB6B9E /* LHMyTeamViewController.xib */,
+			);
+			path = "我的团队";
+			sourceTree = "<group>";
+		};
+		FA6CDDAD2147B9D900BB6B9E /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				FA6CDDAE2147B9F300BB6B9E /* LHTeamTableViewCell.h */,
+				FA6CDDAF2147B9F300BB6B9E /* LHTeamTableViewCell.m */,
+				FA6CDDB02147B9F300BB6B9E /* LHTeamTableViewCell.xib */,
+				FA6CDDB32147BF4500BB6B9E /* LHTeamMemberTableViewCell.h */,
+				FA6CDDB42147BF4500BB6B9E /* LHTeamMemberTableViewCell.m */,
+				FA6CDDB52147BF4500BB6B9E /* LHTeamMemberTableViewCell.xib */,
+				FA6CDDB82147C34100BB6B9E /* LHAllTableViewCell.h */,
+				FA6CDDB92147C34100BB6B9E /* LHAllTableViewCell.m */,
+				FA6CDDBA2147C34100BB6B9E /* LHAllTableViewCell.xib */,
+			);
+			path = cell;
+			sourceTree = "<group>";
+		};
 		FAC1E66C21421A9B004B0DAA = {
 			isa = PBXGroup;
 			children = (
@@ -573,10 +635,12 @@
 				FA2165FD214358240087B76B /* Tools */,
 				FA2165FC214357DE0087B76B /* supportFiles */,
 				FAC1E6AE21422417004B0DAA /* BaseViewController */,
+				FA6CDDA72147B87C00BB6B9E /* 我的团队 */,
 				FA2166842143CB9E0087B76B /* 我的钱包 */,
 				FA21667E2143A7450087B76B /* 立即支付 */,
 				FAC1E6AD2142236D004B0DAA /* 我要推广 */,
 				FAC1E7AD214280BB004B0DAA /* 会员权益 */,
+				FA6CDDA121477F6900BB6B9E /* 实名认证 */,
 				FAC1E67E21421A9B004B0DAA /* Main.storyboard */,
 				FAC1E68321421A9D004B0DAA /* LaunchScreen.storyboard */,
 				FAC1E6AA214220B9004B0DAA /* LHMineTableViewController.h */,
@@ -744,10 +808,14 @@
 				FA6CDD9921475EE800BB6B9E /* LHFetchMoneyViewController.xib in Resources */,
 				FA1D56DC2146681200D307C5 /* LHOutMoneyViewController.xib in Resources */,
 				FAC1E68521421A9D004B0DAA /* LaunchScreen.storyboard in Resources */,
+				FA6CDDBC2147C34100BB6B9E /* LHAllTableViewCell.xib in Resources */,
 				FAC1E7AC2142711F004B0DAA /* LHPopularizeViewController.xib in Resources */,
 				FA6CDD902147594600BB6B9E /* AlipaySDK.bundle in Resources */,
+				FA6CDDA62147801700BB6B9E /* LHRealNameViewController.xib in Resources */,
+				FA6CDDB72147BF4500BB6B9E /* LHTeamMemberTableViewCell.xib in Resources */,
 				FA2166892143CBDB0087B76B /* LHNounViewController.xib in Resources */,
 				FAC1E68221421A9D004B0DAA /* Assets.xcassets in Resources */,
+				FA6CDDAC2147B89200BB6B9E /* LHMyTeamViewController.xib in Resources */,
 				FA21664F214392E90087B76B /* ShareSDK.bundle in Resources */,
 				FA2166832143A7AF0087B76B /* LHPayViewController.xib in Resources */,
 				FA216650214392E90087B76B /* ShareSDKUI.bundle in Resources */,
@@ -755,6 +823,7 @@
 				FA21664B214392E90087B76B /* README.txt in Resources */,
 				FA6CDDA02147655200BB6B9E /* LHFetchViewController.xib in Resources */,
 				FA21668F2143D5470087B76B /* LHDetailTableViewCell.xib in Resources */,
+				FA6CDDB22147B9F300BB6B9E /* LHTeamTableViewCell.xib in Resources */,
 				FAC1E7B221428111004B0DAA /* LHMemberViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -842,15 +911,20 @@
 				FA1D56DB2146681200D307C5 /* LHOutMoneyViewController.m in Sources */,
 				FAC1E68821421A9D004B0DAA /* main.m in Sources */,
 				FA21660921435F610087B76B /* LHPopularizeModel.m in Sources */,
+				FA6CDDA52147801700BB6B9E /* LHRealNameViewController.m in Sources */,
+				FA6CDDB62147BF4500BB6B9E /* LHTeamMemberTableViewCell.m in Sources */,
 				FAC1E6AC214220B9004B0DAA /* LHMineTableViewController.m in Sources */,
 				FA2166882143CBDB0087B76B /* LHNounViewController.m in Sources */,
 				FA6CDD9F2147655200BB6B9E /* LHFetchViewController.m in Sources */,
 				FAC1E7B121428111004B0DAA /* LHMemberViewController.m in Sources */,
+				FA6CDDB12147B9F300BB6B9E /* LHTeamTableViewCell.m in Sources */,
 				FAC1E67A21421A9B004B0DAA /* AppDelegate.m in Sources */,
 				FA1D56D32146460300D307C5 /* LHNounViewModel.m in Sources */,
 				FA21660621435EB60087B76B /* LHPopularizeViewModel.m in Sources */,
 				FA2166822143A7AF0087B76B /* LHPayViewController.m in Sources */,
 				FA6CDD9821475EE800BB6B9E /* LHFetchMoneyViewController.m in Sources */,
+				FA6CDDBB2147C34100BB6B9E /* LHAllTableViewCell.m in Sources */,
+				FA6CDDAB2147B89200BB6B9E /* LHMyTeamViewController.m in Sources */,
 				FA1D56D72146471F00D307C5 /* LHNounModel.m in Sources */,
 				FAC1E6B12142242F004B0DAA /* LHBaseViewController.m in Sources */,
 				FAC1E7AB2142711F004B0DAA /* LHPopularizeViewController.m in Sources */,

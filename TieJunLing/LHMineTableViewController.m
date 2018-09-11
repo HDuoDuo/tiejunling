@@ -10,6 +10,8 @@
 #import "LHPopularizeViewController.h"
 #import "LHMemberViewController.h"
 #import "LHNounViewController.h"
+#import "LHRealNameViewController.h"
+#import "LHMyTeamViewController.h"
 @interface LHMineTableViewController ()
 
 @end
@@ -46,6 +48,14 @@
     if (indexPath.row == 5) {
         LHNounViewController *nounVC = [[LHNounViewController alloc]init];
         [self.navigationController pushViewController:nounVC animated:true];
+    }
+    if (indexPath.row == 8) {
+        LHRealNameViewController *realNameVC = [[LHRealNameViewController alloc]init];
+        [self.navigationController pushViewController:realNameVC animated:true];
+    }
+    if (indexPath.row == 6) {
+        LHMyTeamViewController *myTeamVC = [[LHMyTeamViewController alloc]init];
+        [self.navigationController pushViewController:myTeamVC animated:true];
     }
 }
 
