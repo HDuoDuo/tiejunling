@@ -27,15 +27,36 @@
     self.isWeiXin = true;
     self.weiXinBtn.selected = self.isWeiXin;
 }
-
-
+- (void)btntap {
+    
+}
+- (void)showSuccessAlert {
+    // 快速显示一个提示信息
+    MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+    hud.label.text = @"支付成功";
+    hud.minSize = CGSizeMake(200, 100);
+    hud.offset = CGPointMake(0,-100);
+    hud.label.font = [UIFont systemFontOfSize:18.0];
+    hud.userInteractionEnabled= NO;
+    hud.contentColor = [UIColor colorWithRed:46/255.0 green:195/255.0 blue:172/255.0 alpha:1];
+    hud.customView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"success.png"]];  // 设置图片
+    hud.bezelView.backgroundColor = [UIColor whiteColor];    //背景颜色
+    // 再设置模式
+    hud.mode = MBProgressHUDModeCustomView;
+    
+    // 隐藏时候从父控件中移除
+    hud.removeFromSuperViewOnHide = YES;
+    
+    // 1秒之后再消失
+    [hud hideAnimated:YES afterDelay:1.5];
+}
 - (IBAction)sureTap:(UIButton *)sender {
-    if (self.isWeiXin) {
-        //调起微信支付
-        [self weixinzhifu];
-    }else {
-        [self zhifubaozhifu];
-    }
+//    if (self.isWeiXin) {
+//        //调起微信支付
+//        [self weixinzhifu];
+//    }else {
+//        [self zhifubaozhifu];
+//    }
 }
 //支付宝支付
 - (void)zhifubaozhifu {

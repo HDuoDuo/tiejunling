@@ -13,8 +13,10 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LHNounViewController">
             <connections>
                 <outlet property="detailLabel" destination="Yel-6m-RgY" id="Qw3-ab-IXU"/>
+                <outlet property="indicatorLabel" destination="FGq-Ys-LU3" id="0t8-JB-X0D"/>
                 <outlet property="moneyLabel" destination="rcQ-Jm-Zlu" id="gtd-Th-r1w"/>
                 <outlet property="myTableView" destination="1BH-vE-vPa" id="gxV-g5-Wfd"/>
+                <outlet property="outMoneyBtn" destination="8D4-dP-AzU" id="Z5B-XM-kUE"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -44,15 +46,28 @@
                                 <action selector="myWallet:" destination="-1" eventType="touchUpInside" id="cld-tX-p6f"/>
                             </connections>
                         </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FGq-Ys-LU3">
+                            <rect key="frame" x="76.5" y="37" width="25" height="3"/>
+                            <color key="backgroundColor" red="1" green="0.51764705879999995" blue="0.3803921569" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="25" id="SY3-aB-HNd"/>
+                                <constraint firstAttribute="height" constant="3" id="f0X-OE-XLn"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
+                        <constraint firstItem="FGq-Ys-LU3" firstAttribute="top" secondItem="b5z-TX-SuT" secondAttribute="bottom" id="TFj-HJ-nw0"/>
                         <constraint firstAttribute="height" constant="44" id="U6d-2n-c9b"/>
                         <constraint firstItem="h2b-jn-htv" firstAttribute="width" secondItem="b5z-TX-SuT" secondAttribute="width" id="XJV-xF-2l3"/>
                         <constraint firstItem="h2b-jn-htv" firstAttribute="centerY" secondItem="b5z-TX-SuT" secondAttribute="centerY" id="ZTa-SX-z4S"/>
                         <constraint firstAttribute="trailing" secondItem="h2b-jn-htv" secondAttribute="trailing" constant="58" id="ccF-7X-Adx"/>
                         <constraint firstItem="b5z-TX-SuT" firstAttribute="leading" secondItem="dws-iG-OJV" secondAttribute="leading" constant="58" id="gjs-tA-z11"/>
                         <constraint firstItem="b5z-TX-SuT" firstAttribute="centerY" secondItem="dws-iG-OJV" secondAttribute="centerY" id="mRz-an-4qE"/>
+                        <constraint firstItem="FGq-Ys-LU3" firstAttribute="centerX" secondItem="b5z-TX-SuT" secondAttribute="centerX" id="uf8-Vh-Jge"/>
                     </constraints>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HDn-AW-rxJ">

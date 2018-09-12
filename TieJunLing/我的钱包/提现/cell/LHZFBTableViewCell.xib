@@ -76,7 +76,7 @@
                         </constraints>
                     </view>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I73-Vg-Vmd">
-                        <rect key="frame" x="90" y="98.5" width="1" height="18"/>
+                        <rect key="frame" x="94" y="98.5" width="1" height="18"/>
                         <color key="backgroundColor" red="0.53333333329999999" green="0.53333333329999999" blue="0.53333333329999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="1" id="FcR-a8-POo"/>
@@ -87,7 +87,7 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mrF-vS-WO8" customClass="MJCountDownButton">
-                        <rect key="frame" x="101" y="94" width="80" height="27"/>
+                        <rect key="frame" x="103" y="94" width="80" height="27"/>
                         <color key="backgroundColor" red="0.79215686269999996" green="0.79215686269999996" blue="0.79215686269999996" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="27" id="Dc3-4A-HGi"/>
@@ -118,7 +118,7 @@
                     </label>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="mrF-vS-WO8" firstAttribute="leading" secondItem="I73-Vg-Vmd" secondAttribute="trailing" constant="10" id="I1u-LC-asg"/>
+                    <constraint firstItem="mrF-vS-WO8" firstAttribute="leading" secondItem="I73-Vg-Vmd" secondAttribute="trailing" constant="8" id="I1u-LC-asg"/>
                     <constraint firstItem="ZGd-mU-xd9" firstAttribute="top" secondItem="S2h-eG-h1R" secondAttribute="bottom" constant="4" id="SCh-yk-Xtu"/>
                     <constraint firstItem="fEb-Z0-4cu" firstAttribute="leading" secondItem="ZGd-mU-xd9" secondAttribute="leading" id="SgT-DK-EAM"/>
                     <constraint firstItem="ZGd-mU-xd9" firstAttribute="leading" secondItem="8oK-Ww-p7m" secondAttribute="leading" id="Vhj-z5-w4h"/>
@@ -127,7 +127,7 @@
                     <constraint firstItem="fEb-Z0-4cu" firstAttribute="top" secondItem="ZGd-mU-xd9" secondAttribute="bottom" constant="8" id="eNm-2h-Kxe"/>
                     <constraint firstItem="mrF-vS-WO8" firstAttribute="centerY" secondItem="fEb-Z0-4cu" secondAttribute="centerY" id="jrH-Q6-j6l"/>
                     <constraint firstItem="S2h-eG-h1R" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="ng8-C2-3XB"/>
-                    <constraint firstItem="I73-Vg-Vmd" firstAttribute="leading" secondItem="fEb-Z0-4cu" secondAttribute="trailing" constant="4" id="uPF-Ho-Kns"/>
+                    <constraint firstItem="I73-Vg-Vmd" firstAttribute="leading" secondItem="fEb-Z0-4cu" secondAttribute="trailing" constant="8" id="uPF-Ho-Kns"/>
                     <constraint firstAttribute="trailing" secondItem="S2h-eG-h1R" secondAttribute="trailing" id="x1w-II-75V"/>
                 </constraints>
             </tableViewCellContentView>

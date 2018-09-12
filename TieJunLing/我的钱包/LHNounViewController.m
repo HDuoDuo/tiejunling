@@ -20,6 +20,8 @@ static NSString *cellIdentifier = @"LHDetailTableViewCellIdentifier";
 @property(nonatomic,strong)LHNounViewModel *viewModel;
 @property(nonatomic,strong)QFDatePickerView *datePickerView;
 @property(nonatomic,assign)BOOL isNounStatus;
+@property (weak, nonatomic) IBOutlet UILabel *indicatorLabel;
+@property (weak, nonatomic) IBOutlet UIButton *outMoneyBtn;
 
 @end
 
@@ -46,7 +48,23 @@ static NSString *cellIdentifier = @"LHDetailTableViewCellIdentifier";
             [weakSelf.myTableView reloadData];
         }];
     }];
+    
+    //下拉刷新
+    self.myTableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
+        
+    }];
+    //上拉加载
+    self.myTableView.mj_footer = [MJRefreshAutoNormalFooter footerWithRefreshingBlock:^{
+        
+    }];
    
+}
+- (void)loadData {
+    
+}
+- (void)loadMoreData {
+    // 
+    
 }
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
@@ -73,10 +91,24 @@ static NSString *cellIdentifier = @"LHDetailTableViewCellIdentifier";
     // Dispose of any resources that can be recreated.
 }
 - (IBAction)myNoun:(UIButton *)sender {
-    
+    self.indicatorLabel.center = CGPointMake(sender.center.x, self.indicatorLabel.center.y);
+    self.isNounStatus = true;
 }
 - (IBAction)myWallet:(UIButton *)sender {
+    self.indicatorLabel.center = CGPointMake(sender.center.x, self.indicatorLabel.center.y);
     self.isNounStatus = false;
+}
+//  更新界面状态
+- (void)updateUIStatus {
+    if (self.isNounStatus) {//奖金
+        [self.outMoneyBtn setTitle:@"转出" forState:UIControlStateNormal];
+    }else {//钱包
+        [self.outMoneyBtn setTitle:@"提现" forState:UIControlStateNormal];
+    }
+}
+- (void)setIsNounStatus:(BOOL)isNounStatus {
+    _isNounStatus = isNounStatus;
+    [self updateUIStatus];
 }
 - (IBAction)outMoney:(UIButton *)sender {
     //判断当前状态是否奖金页面

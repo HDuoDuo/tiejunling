@@ -13,8 +13,9 @@ target 'TieJunLing' do
     pod 'WechatOpenSDK'
     pod 'QFDatePicker'
     pod 'AliyunOSSiOS'
-
-
+    pod 'MJRefresh'
+    pod 'MBProgressHUD'
+  
 
   target 'TieJunLingTests' do
     inherit! :search_paths

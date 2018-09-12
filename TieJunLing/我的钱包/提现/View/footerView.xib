@@ -32,7 +32,7 @@
                             <nil key="highlightedColor"/>
                         </label>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ywj-Oc-WW9">
-                            <rect key="frame" x="47.5" y="46.5" width="1" height="20"/>
+                            <rect key="frame" x="53.5" y="46.5" width="1" height="20"/>
                             <color key="backgroundColor" red="0.53333333329999999" green="0.53333333329999999" blue="0.53333333329999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="1" id="JUu-J3-RMB"/>
@@ -81,8 +81,8 @@
                         <constraint firstItem="cWe-cF-L9B" firstAttribute="top" secondItem="eL4-jJ-qd2" secondAttribute="bottom" constant="18" id="itE-8a-FOs"/>
                         <constraint firstItem="Me0-qp-toJ" firstAttribute="centerY" secondItem="cAc-3o-GcU" secondAttribute="centerY" id="pV0-AN-x9f"/>
                         <constraint firstItem="Ywj-Oc-WW9" firstAttribute="centerY" secondItem="cAc-3o-GcU" secondAttribute="centerY" id="s5w-P0-Jov"/>
-                        <constraint firstItem="Ywj-Oc-WW9" firstAttribute="leading" secondItem="cAc-3o-GcU" secondAttribute="trailing" constant="2" id="ut8-D7-29U"/>
-                        <constraint firstItem="Me0-qp-toJ" firstAttribute="leading" secondItem="Ywj-Oc-WW9" secondAttribute="trailing" constant="14" id="vI9-E6-zCC"/>
+                        <constraint firstItem="Ywj-Oc-WW9" firstAttribute="leading" secondItem="cAc-3o-GcU" secondAttribute="trailing" constant="8" id="ut8-D7-29U"/>
+                        <constraint firstItem="Me0-qp-toJ" firstAttribute="leading" secondItem="Ywj-Oc-WW9" secondAttribute="trailing" constant="8" id="vI9-E6-zCC"/>
                     </constraints>
                     <viewLayoutGuide key="safeArea" id="rfr-Id-RTy"/>
                 </view>

@@ -44,7 +44,6 @@
 		FA5050342148A66600FE16B6 /* LHTeamModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FA5050332148A66600FE16B6 /* LHTeamModel.m */; };
 		FA50503F2148E6E400FE16B6 /* footerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA50503E2148E6E400FE16B6 /* footerView.xib */; };
 		FA5050422148E7BE00FE16B6 /* footerView.m in Sources */ = {isa = PBXBuildFile; fileRef = FA5050412148E7BE00FE16B6 /* footerView.m */; };
-		FA5050442148E89000FE16B6 /* headerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA5050432148E89000FE16B6 /* headerView.xib */; };
 		FA5050482148EA9000FE16B6 /* LHTieViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FA5050472148EA9000FE16B6 /* LHTieViewModel.m */; };
 		FA50504C2148EB8B00FE16B6 /* LHTieModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FA50504B2148EB8B00FE16B6 /* LHTieModel.m */; };
 		FA5050502148ECE700FE16B6 /* LHZFBTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FA50504E2148ECE700FE16B6 /* LHZFBTableViewCell.m */; };
@@ -171,7 +170,6 @@
 		FA50503E2148E6E400FE16B6 /* footerView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = footerView.xib; sourceTree = "<group>"; };
 		FA5050402148E7BE00FE16B6 /* footerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = footerView.h; sourceTree = "<group>"; };
 		FA5050412148E7BE00FE16B6 /* footerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = footerView.m; sourceTree = "<group>"; };
-		FA5050432148E89000FE16B6 /* headerView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = headerView.xib; sourceTree = "<group>"; };
 		FA5050462148EA9000FE16B6 /* LHTieViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LHTieViewModel.h; sourceTree = "<group>"; };
 		FA5050472148EA9000FE16B6 /* LHTieViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LHTieViewModel.m; sourceTree = "<group>"; };
 		FA50504A2148EB8B00FE16B6 /* LHTieModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LHTieModel.h; sourceTree = "<group>"; };
@@ -588,7 +586,6 @@
 				FA50503E2148E6E400FE16B6 /* footerView.xib */,
 				FA5050402148E7BE00FE16B6 /* footerView.h */,
 				FA5050412148E7BE00FE16B6 /* footerView.m */,
-				FA5050432148E89000FE16B6 /* headerView.xib */,
 				FA5050542148F65200FE16B6 /* ZFBsectionHeaderView.xib */,
 				FA5050592148FA5600FE16B6 /* ZFBsectionHeaderView.h */,
 				FA50505A2148FA5600FE16B6 /* ZFBsectionHeaderView.m */,
@@ -817,6 +814,7 @@
 				FAC1E67121421A9B004B0DAA /* Sources */,
 				FAC1E67221421A9B004B0DAA /* Frameworks */,
 				FAC1E67321421A9B004B0DAA /* Resources */,
+				8A2048F48F55BC309440601F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -934,7 +932,6 @@
 				FA21664B214392E90087B76B /* README.txt in Resources */,
 				FA5050532148F57600FE16B6 /* WXsectionHeaderView.xib in Resources */,
 				FA6CDDA02147655200BB6B9E /* LHFetchViewController.xib in Resources */,
-				FA5050442148E89000FE16B6 /* headerView.xib in Resources */,
 				FA21668F2143D5470087B76B /* LHDetailTableViewCell.xib in Resources */,
 				FA6CDDB22147B9F300BB6B9E /* LHTeamTableViewCell.xib in Resources */,
 				FAC1E7B221428111004B0DAA /* LHMemberViewController.xib in Resources */,
@@ -958,6 +955,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		8A2048F48F55BC309440601F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TieJunLing/Pods-TieJunLing-resources.sh",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TieJunLing/Pods-TieJunLing-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		9E1659B2A08AAFA6F2659581 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
