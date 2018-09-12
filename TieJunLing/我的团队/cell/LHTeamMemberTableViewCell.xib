@@ -22,7 +22,7 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sIc-tp-mcf">
                         <rect key="frame" x="0.0" y="0.0" width="365" height="69.5"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="RKD-uk-PPC">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Placehodericon" translatesAutoresizingMaskIntoConstraints="NO" id="RKD-uk-PPC">
                                 <rect key="frame" x="12" y="4" width="62" height="62"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="62" id="4c1-gP-aft"/>
@@ -36,7 +36,7 @@
                                 </userDefinedRuntimeAttributes>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="何达四" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PfV-tu-agv">
-                                <rect key="frame" x="94" y="16" width="46" height="18"/>
+                                <rect key="frame" x="88" y="16" width="46" height="18"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="textColor" red="0.22352941179999999" green="0.22352941179999999" blue="0.22352941179999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -49,34 +49,40 @@
                                 </constraints>
                                 <state key="normal" backgroundImage="phone"/>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="间推" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jx0-lX-qyG">
-                                <rect key="frame" x="94" y="39.5" width="25" height="14.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="间推" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jx0-lX-qyG">
+                                <rect key="frame" x="88" y="38" width="28" height="16"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="16" id="Gc8-yg-IiR"/>
+                                    <constraint firstAttribute="width" constant="28" id="I7y-Yt-A5Y"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <color key="textColor" red="0.85098039215686272" green="0.023529411764705882" blue="0.023529411764705882" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
-                                        <integer key="value" value="1"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="layer.borderColor">
-                                        <color key="value" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ling" translatesAutoresizingMaskIntoConstraints="NO" id="ffh-zO-Snx">
+                                <rect key="frame" x="120" y="36" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="20" id="ddJ-fF-7YZ"/>
+                                    <constraint firstAttribute="height" constant="20" id="kGh-Bz-9g0"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.95686274510000002" green="0.96078431369999995" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="jx0-lX-qyG" firstAttribute="leading" secondItem="PfV-tu-agv" secondAttribute="leading" id="1nm-Ie-1xa"/>
                             <constraint firstAttribute="trailing" secondItem="YWN-st-EKU" secondAttribute="trailing" constant="26" id="8XM-uS-PbR"/>
                             <constraint firstItem="jx0-lX-qyG" firstAttribute="bottom" secondItem="RKD-uk-PPC" secondAttribute="bottom" constant="-12" id="B6i-w8-fca"/>
+                            <constraint firstItem="ffh-zO-Snx" firstAttribute="centerY" secondItem="jx0-lX-qyG" secondAttribute="centerY" id="J4g-G2-hHn"/>
                             <constraint firstItem="RKD-uk-PPC" firstAttribute="centerY" secondItem="sIc-tp-mcf" secondAttribute="centerY" id="MJQ-Rl-fuk"/>
                             <constraint firstItem="YWN-st-EKU" firstAttribute="centerY" secondItem="sIc-tp-mcf" secondAttribute="centerY" id="WUH-iB-r4D"/>
+                            <constraint firstItem="ffh-zO-Snx" firstAttribute="leading" secondItem="jx0-lX-qyG" secondAttribute="trailing" constant="4" id="dUU-6l-ny2"/>
                             <constraint firstItem="PfV-tu-agv" firstAttribute="top" secondItem="RKD-uk-PPC" secondAttribute="top" constant="12" id="gI3-cg-lft"/>
                             <constraint firstItem="RKD-uk-PPC" firstAttribute="leading" secondItem="sIc-tp-mcf" secondAttribute="leading" constant="12" id="ixT-7q-ltY"/>
-                            <constraint firstItem="PfV-tu-agv" firstAttribute="leading" secondItem="RKD-uk-PPC" secondAttribute="trailing" constant="20" id="xb5-SC-xPV"/>
+                            <constraint firstItem="PfV-tu-agv" firstAttribute="leading" secondItem="RKD-uk-PPC" secondAttribute="trailing" constant="14" id="xb5-SC-xPV"/>
                         </constraints>
                     </view>
                 </subviews>
+                <color key="backgroundColor" red="0.95686274510000002" green="0.96078431369999995" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                 <constraints>
                     <constraint firstItem="sIc-tp-mcf" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Bmd-fa-8pn"/>
                     <constraint firstAttribute="bottom" secondItem="sIc-tp-mcf" secondAttribute="bottom" id="Gqz-Wo-gwV"/>
@@ -85,10 +91,19 @@
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="headImg" destination="RKD-uk-PPC" id="oIe-sc-Yer"/>
+                <outlet property="jianTuiLabel" destination="jx0-lX-qyG" id="oZE-mb-d1N"/>
+                <outlet property="memberIcon" destination="ffh-zO-Snx" id="IxQ-NZ-Z0J"/>
+                <outlet property="nickNameLabel" destination="PfV-tu-agv" id="jfc-ld-XLB"/>
+                <outlet property="statusLabel" destination="jx0-lX-qyG" id="Ph8-fx-m8a"/>
+            </connections>
             <point key="canvasLocation" x="41.5" y="-264"/>
         </tableViewCell>
     </objects>
     <resources>
+        <image name="Placehodericon" width="110" height="110"/>
+        <image name="ling" width="19" height="19"/>
         <image name="phone" width="21" height="21"/>
     </resources>
 </document>

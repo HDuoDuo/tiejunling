@@ -40,6 +40,20 @@
 		FA2166892143CBDB0087B76B /* LHNounViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA2166872143CBDB0087B76B /* LHNounViewController.xib */; };
 		FA21668E2143D5470087B76B /* LHDetailTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FA21668C2143D5470087B76B /* LHDetailTableViewCell.m */; };
 		FA21668F2143D5470087B76B /* LHDetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA21668D2143D5470087B76B /* LHDetailTableViewCell.xib */; };
+		FA5050302148A57200FE16B6 /* LHTeamViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FA50502F2148A57200FE16B6 /* LHTeamViewModel.m */; };
+		FA5050342148A66600FE16B6 /* LHTeamModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FA5050332148A66600FE16B6 /* LHTeamModel.m */; };
+		FA50503F2148E6E400FE16B6 /* footerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA50503E2148E6E400FE16B6 /* footerView.xib */; };
+		FA5050422148E7BE00FE16B6 /* footerView.m in Sources */ = {isa = PBXBuildFile; fileRef = FA5050412148E7BE00FE16B6 /* footerView.m */; };
+		FA5050442148E89000FE16B6 /* headerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA5050432148E89000FE16B6 /* headerView.xib */; };
+		FA5050482148EA9000FE16B6 /* LHTieViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FA5050472148EA9000FE16B6 /* LHTieViewModel.m */; };
+		FA50504C2148EB8B00FE16B6 /* LHTieModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FA50504B2148EB8B00FE16B6 /* LHTieModel.m */; };
+		FA5050502148ECE700FE16B6 /* LHZFBTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FA50504E2148ECE700FE16B6 /* LHZFBTableViewCell.m */; };
+		FA5050512148ECE700FE16B6 /* LHZFBTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA50504F2148ECE700FE16B6 /* LHZFBTableViewCell.xib */; };
+		FA5050532148F57600FE16B6 /* WXsectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA5050522148F57600FE16B6 /* WXsectionHeaderView.xib */; };
+		FA5050552148F65200FE16B6 /* ZFBsectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA5050542148F65200FE16B6 /* ZFBsectionHeaderView.xib */; };
+		FA5050582148FA3F00FE16B6 /* WXsectionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = FA5050572148FA3F00FE16B6 /* WXsectionHeaderView.m */; };
+		FA50505B2148FA5600FE16B6 /* ZFBsectionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = FA50505A2148FA5600FE16B6 /* ZFBsectionHeaderView.m */; };
+		FA50506121490F2000FE16B6 /* MJCountDownButton.m in Sources */ = {isa = PBXBuildFile; fileRef = FA50506021490F2000FE16B6 /* MJCountDownButton.m */; };
 		FA6CDD792147546B00BB6B9E /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = FA6CDD782147546B00BB6B9E /* libc++.tbd */; };
 		FA6CDD7B2147548000BB6B9E /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA6CDD7A2147548000BB6B9E /* SystemConfiguration.framework */; };
 		FA6CDD7D2147549100BB6B9E /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA6CDD7C2147549100BB6B9E /* CoreTelephony.framework */; };
@@ -150,6 +164,29 @@
 		FA21668B2143D5470087B76B /* LHDetailTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LHDetailTableViewCell.h; sourceTree = "<group>"; };
 		FA21668C2143D5470087B76B /* LHDetailTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LHDetailTableViewCell.m; sourceTree = "<group>"; };
 		FA21668D2143D5470087B76B /* LHDetailTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LHDetailTableViewCell.xib; sourceTree = "<group>"; };
+		FA50502E2148A57200FE16B6 /* LHTeamViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LHTeamViewModel.h; sourceTree = "<group>"; };
+		FA50502F2148A57200FE16B6 /* LHTeamViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LHTeamViewModel.m; sourceTree = "<group>"; };
+		FA5050322148A66600FE16B6 /* LHTeamModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LHTeamModel.h; sourceTree = "<group>"; };
+		FA5050332148A66600FE16B6 /* LHTeamModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LHTeamModel.m; sourceTree = "<group>"; };
+		FA50503E2148E6E400FE16B6 /* footerView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = footerView.xib; sourceTree = "<group>"; };
+		FA5050402148E7BE00FE16B6 /* footerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = footerView.h; sourceTree = "<group>"; };
+		FA5050412148E7BE00FE16B6 /* footerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = footerView.m; sourceTree = "<group>"; };
+		FA5050432148E89000FE16B6 /* headerView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = headerView.xib; sourceTree = "<group>"; };
+		FA5050462148EA9000FE16B6 /* LHTieViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LHTieViewModel.h; sourceTree = "<group>"; };
+		FA5050472148EA9000FE16B6 /* LHTieViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LHTieViewModel.m; sourceTree = "<group>"; };
+		FA50504A2148EB8B00FE16B6 /* LHTieModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LHTieModel.h; sourceTree = "<group>"; };
+		FA50504B2148EB8B00FE16B6 /* LHTieModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LHTieModel.m; sourceTree = "<group>"; };
+		FA50504D2148ECE700FE16B6 /* LHZFBTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LHZFBTableViewCell.h; sourceTree = "<group>"; };
+		FA50504E2148ECE700FE16B6 /* LHZFBTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LHZFBTableViewCell.m; sourceTree = "<group>"; };
+		FA50504F2148ECE700FE16B6 /* LHZFBTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LHZFBTableViewCell.xib; sourceTree = "<group>"; };
+		FA5050522148F57600FE16B6 /* WXsectionHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WXsectionHeaderView.xib; sourceTree = "<group>"; };
+		FA5050542148F65200FE16B6 /* ZFBsectionHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZFBsectionHeaderView.xib; sourceTree = "<group>"; };
+		FA5050562148FA3F00FE16B6 /* WXsectionHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WXsectionHeaderView.h; sourceTree = "<group>"; };
+		FA5050572148FA3F00FE16B6 /* WXsectionHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WXsectionHeaderView.m; sourceTree = "<group>"; };
+		FA5050592148FA5600FE16B6 /* ZFBsectionHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZFBsectionHeaderView.h; sourceTree = "<group>"; };
+		FA50505A2148FA5600FE16B6 /* ZFBsectionHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZFBsectionHeaderView.m; sourceTree = "<group>"; };
+		FA50505F21490F2000FE16B6 /* MJCountDownButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MJCountDownButton.h; sourceTree = "<group>"; };
+		FA50506021490F2000FE16B6 /* MJCountDownButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MJCountDownButton.m; sourceTree = "<group>"; };
 		FA6CDD782147546B00BB6B9E /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		FA6CDD7A2147548000BB6B9E /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		FA6CDD7C2147549100BB6B9E /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
@@ -517,6 +554,71 @@
 			path = cell;
 			sourceTree = "<group>";
 		};
+		FA50502D2148A54F00FE16B6 /* viewModel */ = {
+			isa = PBXGroup;
+			children = (
+				FA50502E2148A57200FE16B6 /* LHTeamViewModel.h */,
+				FA50502F2148A57200FE16B6 /* LHTeamViewModel.m */,
+			);
+			path = viewModel;
+			sourceTree = "<group>";
+		};
+		FA5050312148A65400FE16B6 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				FA5050322148A66600FE16B6 /* LHTeamModel.h */,
+				FA5050332148A66600FE16B6 /* LHTeamModel.m */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		FA5050352148DFC400FE16B6 /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				FA50504D2148ECE700FE16B6 /* LHZFBTableViewCell.h */,
+				FA50504E2148ECE700FE16B6 /* LHZFBTableViewCell.m */,
+				FA50504F2148ECE700FE16B6 /* LHZFBTableViewCell.xib */,
+			);
+			path = cell;
+			sourceTree = "<group>";
+		};
+		FA50503B2148E6BF00FE16B6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FA50503E2148E6E400FE16B6 /* footerView.xib */,
+				FA5050402148E7BE00FE16B6 /* footerView.h */,
+				FA5050412148E7BE00FE16B6 /* footerView.m */,
+				FA5050432148E89000FE16B6 /* headerView.xib */,
+				FA5050542148F65200FE16B6 /* ZFBsectionHeaderView.xib */,
+				FA5050592148FA5600FE16B6 /* ZFBsectionHeaderView.h */,
+				FA50505A2148FA5600FE16B6 /* ZFBsectionHeaderView.m */,
+				FA5050522148F57600FE16B6 /* WXsectionHeaderView.xib */,
+				FA5050562148FA3F00FE16B6 /* WXsectionHeaderView.h */,
+				FA5050572148FA3F00FE16B6 /* WXsectionHeaderView.m */,
+				FA50505F21490F2000FE16B6 /* MJCountDownButton.h */,
+				FA50506021490F2000FE16B6 /* MJCountDownButton.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FA5050452148EA7800FE16B6 /* viewModel */ = {
+			isa = PBXGroup;
+			children = (
+				FA5050462148EA9000FE16B6 /* LHTieViewModel.h */,
+				FA5050472148EA9000FE16B6 /* LHTieViewModel.m */,
+			);
+			path = viewModel;
+			sourceTree = "<group>";
+		};
+		FA5050492148EB7800FE16B6 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				FA50504A2148EB8B00FE16B6 /* LHTieModel.h */,
+				FA50504B2148EB8B00FE16B6 /* LHTieModel.m */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
 		FA6CDD732147541F00BB6B9E /* AliPay */ = {
 			isa = PBXGroup;
 			children = (
@@ -555,6 +657,10 @@
 		FA6CDD9A214764FF00BB6B9E /* 提现 */ = {
 			isa = PBXGroup;
 			children = (
+				FA5050492148EB7800FE16B6 /* model */,
+				FA5050452148EA7800FE16B6 /* viewModel */,
+				FA50503B2148E6BF00FE16B6 /* View */,
+				FA5050352148DFC400FE16B6 /* cell */,
 				FA6CDD9C2147655200BB6B9E /* LHFetchViewController.h */,
 				FA6CDD9D2147655200BB6B9E /* LHFetchViewController.m */,
 				FA6CDD9E2147655200BB6B9E /* LHFetchViewController.xib */,
@@ -582,6 +688,8 @@
 		FA6CDDA72147B87C00BB6B9E /* 我的团队 */ = {
 			isa = PBXGroup;
 			children = (
+				FA5050312148A65400FE16B6 /* model */,
+				FA50502D2148A54F00FE16B6 /* viewModel */,
 				FA6CDDAD2147B9D900BB6B9E /* cell */,
 				FA6CDDA82147B89200BB6B9E /* LHMyTeamViewController.h */,
 				FA6CDDA92147B89200BB6B9E /* LHMyTeamViewController.m */,
@@ -819,9 +927,14 @@
 				FA21664F214392E90087B76B /* ShareSDK.bundle in Resources */,
 				FA2166832143A7AF0087B76B /* LHPayViewController.xib in Resources */,
 				FA216650214392E90087B76B /* ShareSDKUI.bundle in Resources */,
+				FA50503F2148E6E400FE16B6 /* footerView.xib in Resources */,
+				FA5050552148F65200FE16B6 /* ZFBsectionHeaderView.xib in Resources */,
+				FA5050512148ECE700FE16B6 /* LHZFBTableViewCell.xib in Resources */,
 				FAC1E68021421A9B004B0DAA /* Main.storyboard in Resources */,
 				FA21664B214392E90087B76B /* README.txt in Resources */,
+				FA5050532148F57600FE16B6 /* WXsectionHeaderView.xib in Resources */,
 				FA6CDDA02147655200BB6B9E /* LHFetchViewController.xib in Resources */,
+				FA5050442148E89000FE16B6 /* headerView.xib in Resources */,
 				FA21668F2143D5470087B76B /* LHDetailTableViewCell.xib in Resources */,
 				FA6CDDB22147B9F300BB6B9E /* LHTeamTableViewCell.xib in Resources */,
 				FAC1E7B221428111004B0DAA /* LHMemberViewController.xib in Resources */,
@@ -908,17 +1021,25 @@
 			files = (
 				FA21668E2143D5470087B76B /* LHDetailTableViewCell.m in Sources */,
 				FA21660221435A640087B76B /* LHNetworking.m in Sources */,
+				FA50506121490F2000FE16B6 /* MJCountDownButton.m in Sources */,
+				FA50504C2148EB8B00FE16B6 /* LHTieModel.m in Sources */,
+				FA5050482148EA9000FE16B6 /* LHTieViewModel.m in Sources */,
 				FA1D56DB2146681200D307C5 /* LHOutMoneyViewController.m in Sources */,
 				FAC1E68821421A9D004B0DAA /* main.m in Sources */,
+				FA5050342148A66600FE16B6 /* LHTeamModel.m in Sources */,
 				FA21660921435F610087B76B /* LHPopularizeModel.m in Sources */,
 				FA6CDDA52147801700BB6B9E /* LHRealNameViewController.m in Sources */,
+				FA5050502148ECE700FE16B6 /* LHZFBTableViewCell.m in Sources */,
 				FA6CDDB62147BF4500BB6B9E /* LHTeamMemberTableViewCell.m in Sources */,
+				FA5050582148FA3F00FE16B6 /* WXsectionHeaderView.m in Sources */,
 				FAC1E6AC214220B9004B0DAA /* LHMineTableViewController.m in Sources */,
 				FA2166882143CBDB0087B76B /* LHNounViewController.m in Sources */,
 				FA6CDD9F2147655200BB6B9E /* LHFetchViewController.m in Sources */,
 				FAC1E7B121428111004B0DAA /* LHMemberViewController.m in Sources */,
 				FA6CDDB12147B9F300BB6B9E /* LHTeamTableViewCell.m in Sources */,
 				FAC1E67A21421A9B004B0DAA /* AppDelegate.m in Sources */,
+				FA5050422148E7BE00FE16B6 /* footerView.m in Sources */,
+				FA5050302148A57200FE16B6 /* LHTeamViewModel.m in Sources */,
 				FA1D56D32146460300D307C5 /* LHNounViewModel.m in Sources */,
 				FA21660621435EB60087B76B /* LHPopularizeViewModel.m in Sources */,
 				FA2166822143A7AF0087B76B /* LHPayViewController.m in Sources */,
@@ -926,6 +1047,7 @@
 				FA6CDDBB2147C34100BB6B9E /* LHAllTableViewCell.m in Sources */,
 				FA6CDDAB2147B89200BB6B9E /* LHMyTeamViewController.m in Sources */,
 				FA1D56D72146471F00D307C5 /* LHNounModel.m in Sources */,
+				FA50505B2148FA5600FE16B6 /* ZFBsectionHeaderView.m in Sources */,
 				FAC1E6B12142242F004B0DAA /* LHBaseViewController.m in Sources */,
 				FAC1E7AB2142711F004B0DAA /* LHPopularizeViewController.m in Sources */,
 			);

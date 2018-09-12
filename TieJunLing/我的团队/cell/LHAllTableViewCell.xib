@@ -22,7 +22,7 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GL2-hI-dT6">
                         <rect key="frame" x="0.0" y="0.0" width="348" height="69.5"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uwB-m9-PZw">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Placehodericon" translatesAutoresizingMaskIntoConstraints="NO" id="uwB-m9-PZw">
                                 <rect key="frame" x="12" y="4" width="62" height="62"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="62" id="UQx-PJ-NTw"/>
@@ -49,34 +49,24 @@
                                 </constraints>
                                 <state key="normal" backgroundImage="phone"/>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dp2-Wf-fii">
-                                <rect key="frame" x="94" y="36" width="22" height="22"/>
-                                <color key="backgroundColor" red="0.22352941179999999" green="0.22352941179999999" blue="0.22352941179999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ling" translatesAutoresizingMaskIntoConstraints="NO" id="dp2-Wf-fii">
+                                <rect key="frame" x="94" y="38" width="20" height="20"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="22" id="WzU-B5-gpf"/>
-                                    <constraint firstAttribute="height" constant="22" id="aiD-bq-lEe"/>
-                                </constraints>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4fF-Tr-ajH">
-                                <rect key="frame" x="126" y="36" width="34" height="22"/>
-                                <color key="backgroundColor" red="0.99607843139999996" green="0.26760525169999999" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="34" id="n6Y-gg-1mo"/>
+                                    <constraint firstAttribute="width" constant="20" id="WzU-B5-gpf"/>
+                                    <constraint firstAttribute="height" constant="20" id="aiD-bq-lEe"/>
                                 </constraints>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.95686274510000002" green="0.96078431369999995" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="dp2-Wf-fii" firstAttribute="leading" secondItem="B5O-60-Stu" secondAttribute="leading" id="3iY-GO-9TP"/>
                             <constraint firstAttribute="trailing" secondItem="ESN-FQ-qud" secondAttribute="trailing" constant="26" id="5pa-qF-Oe8"/>
-                            <constraint firstItem="4fF-Tr-ajH" firstAttribute="bottom" secondItem="dp2-Wf-fii" secondAttribute="bottom" id="MNz-bP-42s"/>
-                            <constraint firstItem="4fF-Tr-ajH" firstAttribute="top" secondItem="dp2-Wf-fii" secondAttribute="top" id="WcU-u9-dVo"/>
                             <constraint firstItem="uwB-m9-PZw" firstAttribute="leading" secondItem="GL2-hI-dT6" secondAttribute="leading" constant="12" id="ZLC-Pc-bBx"/>
                             <constraint firstItem="dp2-Wf-fii" firstAttribute="bottom" secondItem="uwB-m9-PZw" secondAttribute="bottom" constant="-8" id="auK-pb-FRw"/>
                             <constraint firstItem="ESN-FQ-qud" firstAttribute="centerY" secondItem="GL2-hI-dT6" secondAttribute="centerY" id="ddf-C1-TtQ"/>
                             <constraint firstItem="B5O-60-Stu" firstAttribute="leading" secondItem="uwB-m9-PZw" secondAttribute="trailing" constant="20" id="eGq-sW-Ma2"/>
                             <constraint firstItem="uwB-m9-PZw" firstAttribute="centerY" secondItem="GL2-hI-dT6" secondAttribute="centerY" id="epK-Rm-khq"/>
-                            <constraint firstItem="4fF-Tr-ajH" firstAttribute="leading" secondItem="dp2-Wf-fii" secondAttribute="trailing" constant="10" id="vaC-vm-9bs"/>
                             <constraint firstItem="B5O-60-Stu" firstAttribute="top" secondItem="uwB-m9-PZw" secondAttribute="top" constant="8" id="z7i-AI-geV"/>
                         </constraints>
                     </view>
@@ -89,10 +79,16 @@
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="headImg" destination="uwB-m9-PZw" id="HIE-pU-4uf"/>
+                <outlet property="nickNameLabel" destination="B5O-60-Stu" id="Yy9-sU-iLN"/>
+            </connections>
             <point key="canvasLocation" x="40" y="65"/>
         </tableViewCell>
     </objects>
     <resources>
+        <image name="Placehodericon" width="110" height="110"/>
+        <image name="ling" width="19" height="19"/>
         <image name="phone" width="21" height="21"/>
     </resources>
 </document>

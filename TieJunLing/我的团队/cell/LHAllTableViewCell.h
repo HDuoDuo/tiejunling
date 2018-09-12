@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "LHTeamModel.h"
 @interface LHAllTableViewCell : UITableViewCell
+@property(nonatomic,strong)LHTeamModel *model;
+@property (weak, nonatomic) IBOutlet UIImageView *headImg;
+@property (weak, nonatomic) IBOutlet UILabel *nickNameLabel;
 
 @end

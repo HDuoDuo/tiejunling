@@ -12,11 +12,7 @@
 
 - (void)awakeFromNib {
     [super awakeFromNib];
-    // Initialization code
-    self.imageView.layer.cornerRadius = 31;
-    self.imageView.layer.masksToBounds = true;
-    self.imageView.layer.borderWidth = 10;
-    self.imageView.layer.borderColor = [UIColor redColor].CGColor;
+  
 
 }
 

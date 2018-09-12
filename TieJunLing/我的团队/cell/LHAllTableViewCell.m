@@ -14,7 +14,11 @@
     [super awakeFromNib];
     // Initialization code
 }
-
+- (void)setModel:(LHTeamModel *)model {
+    _model = model;
+    [self.headImg sd_setImageWithURL:[NSURL URLWithString:_model.headImg]];
+    self.nickNameLabel.text = _model.nickName;
+}
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
     [super setSelected:selected animated:animated];
 
