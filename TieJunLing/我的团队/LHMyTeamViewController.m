@@ -32,7 +32,9 @@ static NSString *cellIdentifierall = @"LHTeamMemberTableViewCell";//all
     self.myTableView.rowHeight = 80;
     
     __weak typeof(self) weakSelf = self;
+    [SVProgressHUD showWithStatus:@"加载中"];
     [self.viewModel lodData:^(NSInteger num) {
+        [SVProgressHUD dismiss];
         weakSelf.numLabel.text = [NSString stringWithFormat:@"%ld",num];
         [weakSelf.myTableView reloadData];
     }];

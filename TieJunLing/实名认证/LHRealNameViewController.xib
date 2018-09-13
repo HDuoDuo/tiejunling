@@ -12,9 +12,11 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LHRealNameViewController">
             <connections>
+                <outlet property="IDCardTF" destination="pHK-2a-2ci" id="4Xu-xS-EIz"/>
                 <outlet property="backImgView" destination="yui-eF-iUd" id="8Uf-Wd-oYV"/>
                 <outlet property="frontImgView" destination="DfB-aA-KJx" id="oRh-Bg-Bge"/>
                 <outlet property="handleImgView" destination="eed-vL-yK4" id="Tw4-Pc-fkR"/>
+                <outlet property="nameTF" destination="YQb-Hb-K23" id="dOW-Wg-fH1"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		36ED677F993E6538A651877F /* libPods-TieJunLingTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0589B9165F24321C85290190 /* libPods-TieJunLingTests.a */; };
 		3C39D6783171D2433FFF68DF /* libPods-TieJunLing.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FC018F4241393D4817F628EF /* libPods-TieJunLing.a */; };
+		424F2734214ABDEC00701238 /* LHTJLUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 424F2733214ABDEC00701238 /* LHTJLUser.m */; };
 		A9504B513771FC353016DC59 /* libPods-TieJunLingUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C0604CDA6B1C01EE5D8FFC7 /* libPods-TieJunLingUITests.a */; };
 		FA1D56D32146460300D307C5 /* LHNounViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FA1D56D22146460300D307C5 /* LHNounViewModel.m */; };
 		FA1D56D72146471F00D307C5 /* LHNounModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FA1D56D62146471F00D307C5 /* LHNounModel.m */; };
@@ -115,6 +116,8 @@
 		0589B9165F24321C85290190 /* libPods-TieJunLingTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TieJunLingTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		216CF110083C5FA48F98C229 /* Pods-TieJunLingTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TieJunLingTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TieJunLingTests/Pods-TieJunLingTests.release.xcconfig"; sourceTree = "<group>"; };
 		2D14D0C73BD502D4A0D914CE /* Pods-TieJunLingTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TieJunLingTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TieJunLingTests/Pods-TieJunLingTests.debug.xcconfig"; sourceTree = "<group>"; };
+		424F2732214ABDEC00701238 /* LHTJLUser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LHTJLUser.h; sourceTree = "<group>"; };
+		424F2733214ABDEC00701238 /* LHTJLUser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LHTJLUser.m; sourceTree = "<group>"; };
 		70C20ED34BFDD9BEF5E9BD5A /* Pods-TieJunLingUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TieJunLingUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TieJunLingUITests/Pods-TieJunLingUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		7C0604CDA6B1C01EE5D8FFC7 /* libPods-TieJunLingUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TieJunLingUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E076E91A8D61C1B0C53A874 /* Pods-TieJunLing.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TieJunLing.release.xcconfig"; path = "Pods/Target Support Files/Pods-TieJunLing/Pods-TieJunLing.release.xcconfig"; sourceTree = "<group>"; };
@@ -298,6 +301,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		424F2731214ABDCC00701238 /* user */ = {
+			isa = PBXGroup;
+			children = (
+				424F2732214ABDEC00701238 /* LHTJLUser.h */,
+				424F2733214ABDEC00701238 /* LHTJLUser.m */,
+			);
+			path = user;
+			sourceTree = "<group>";
+		};
 		90B933806BD504D3191D3872 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -736,6 +748,7 @@
 		FAC1E67721421A9B004B0DAA /* TieJunLing */ = {
 			isa = PBXGroup;
 			children = (
+				424F2731214ABDCC00701238 /* user */,
 				FA216628214391BE0087B76B /* SDK */,
 				FA2165FD214358240087B76B /* Tools */,
 				FA2165FC214357DE0087B76B /* supportFiles */,
@@ -962,11 +975,15 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-TieJunLing/Pods-TieJunLing-resources.sh",
+				"${PODS_ROOT}/IQKeyboardManager/IQKeyboardManager/Resources/IQKeyboardManager.bundle",
 				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
+				"${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/IQKeyboardManager.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SVProgressHUD.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1037,6 +1054,7 @@
 				FA21668E2143D5470087B76B /* LHDetailTableViewCell.m in Sources */,
 				FA21660221435A640087B76B /* LHNetworking.m in Sources */,
 				FA50506121490F2000FE16B6 /* MJCountDownButton.m in Sources */,
+				424F2734214ABDEC00701238 /* LHTJLUser.m in Sources */,
 				FA50504C2148EB8B00FE16B6 /* LHTieModel.m in Sources */,
 				FA5050482148EA9000FE16B6 /* LHTieViewModel.m in Sources */,
 				FA1D56DB2146681200D307C5 /* LHOutMoneyViewController.m in Sources */,

@@ -13,7 +13,10 @@
 @property (weak, nonatomic) IBOutlet UIImageView *backImgView;
 @property (weak, nonatomic) IBOutlet UIImageView *handleImgView;
 @property(nonatomic,strong)UIImageView *currentImgView;
+@property (weak, nonatomic) IBOutlet UITextField *nameTF;
+@property (weak, nonatomic) IBOutlet UITextField *IDCardTF;
 @property(nonatomic,strong)NSMutableDictionary *imgsDict;
+@property(nonatomic,assign)NSInteger uploadNum;
 @end
 
 @implementation LHRealNameViewController
@@ -85,8 +88,18 @@
     // 从info中将图片取出，并加载到imageView当中
     
     UIImage *img = [info objectForKey:UIImagePickerControllerEditedImage];
-//   [self.imgsArr addObject:img];
     self.currentImgView.image= img;
+    if (self.currentImgView == self.frontImgView) {
+        NSString *key = [NSString stringWithFormat:@"auth/%@%@FH.png",[self timeStamp],[LHTJLUser shared].uid];
+        [self.imgsDict setObject:img forKey:key];
+    }else if (self.currentImgView == self.backImgView) {
+        NSString *key = [NSString stringWithFormat:@"auth/%@%@BH.png",[self timeStamp],[LHTJLUser shared].uid];
+        [self.imgsDict setObject:img forKey:key];
+    }else if (self.currentImgView == self.handleImgView) {
+        NSString *key = [NSString stringWithFormat:@"auth/%@%@DH.png",[self timeStamp],[LHTJLUser shared].uid];
+        [self.imgsDict setObject:img forKey:key];
+
+    }
 }
 #pragma UITextFieldDelegate
 - (BOOL)textFieldShouldReturn:(UITextField *)textField {
@@ -97,76 +110,74 @@
 }
 - (IBAction)IDCardTF:(UITextField *)sender {
 }
-- (IBAction)frontPhoto:(UIButton *)sender {
+- (IBAction)frontPhoto:(UIButton *)sender {//正面
     self.currentImgView = self.frontImgView;
     [self takePhotos];
     
 }
-- (IBAction)backPhoto:(UIButton *)sender {
+- (IBAction)backPhoto:(UIButton *)sender {//反面
     self.currentImgView = self.backImgView;
     [self takePhotos];
 }
-- (IBAction)handlePhoto:(UIButton *)sender {
+- (IBAction)handlePhoto:(UIButton *)sender {//手持
     self.currentImgView = self.handleImgView;
     [self takePhotos];
 }
 - (IBAction)submitBtnTap:(UIButton *)sender {
     //上传图片
-//    if (self.imgsArr.count!=3) {//图片选择不够
-//        return;
-//    }
-    //文件夹auth
-    for (int x = 0; x<3; x++) {
-        
+     self.uploadNum = 0;
+    if (self.imgsDict.count==3 && self.nameTF.text.length > 0 && self.IDCardTF.text.length > 0) {//判断填写完整
+        for (NSString *key in self.imgsDict) {
+            [self uploadImage:self.imgsDict[key] filePath:key];
+        }
+        return;
+    }else {
+        [SVProgressHUD showErrorWithStatus:@"请完成所有项目后提交"];
     }
+    
+}
+//上传图片
+- (void)uploadImage:(UIImage *)image filePath:(NSString *)filePath {
+    //文件夹auth
     NSString *endpoint = @"http://oss-cn-beijing.aliyuncs.com";
     // 移动端建议使用STS方式初始化OSSClient。可以通过sample中STS使用说明了解更多(https://github.com/aliyun/aliyun-oss-ios-sdk/tree/master/DemoByOC)
     id<OSSCredentialProvider> credential = [[OSSPlainTextAKSKPairCredentialProvider alloc]initWithPlainTextAccessKey:@"LTAIAKrXVMhdviNl" secretKey:@"sX5TBlTkHaZ5uvrMvdHSGE7UftqrPf"];
     OSSClient *client = [[OSSClient alloc] initWithEndpoint:endpoint credentialProvider:credential];
-    
     OSSPutObjectRequest * put = [OSSPutObjectRequest new];
     put.bucketName = @"tjl-test";
-    put.objectKey = @"haha.jpg";
-    put.uploadingData = UIImageJPEGRepresentation(self.currentImgView.image, 0.3); // 直接上传NSData
+    put.objectKey = filePath;
+    put.uploadingData = UIImageJPEGRepresentation(image, 0.3); // 直接上传NSData
     put.uploadProgress = ^(int64_t bytesSent, int64_t totalByteSent, int64_t totalBytesExpectedToSend) {
         NSLog(@"%lld, %lld, %lld", bytesSent, totalByteSent, totalBytesExpectedToSend);
     };
     OSSTask * putTask = [client putObject:put];
     [putTask waitUntilFinished];
     if (!putTask.error) {
+        self.uploadNum++;
         NSLog(@"upload object success!");
     }
-    
-    dispatch_group_t group = dispatch_group_create();
-    dispatch_group_async(group, dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-        //请求1
-        NSLog(@"Request_1");
-    });
-    dispatch_group_async(group, dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-        //请求2
-        NSLog(@"Request_2");
-    });
-    dispatch_group_async(group, dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-        //请求3
-        NSLog(@"Request_3");
-    });
-    dispatch_group_notify(group, dispatch_get_main_queue(), ^{
-        //界面刷新
-        NSLog(@"任务均完成，刷新界面");
-    });
-    
-//    [putTask continueWithBlock:^id(OSSTask *task) {
-//        if (!task.error) {
-//            NSLog(@"upload object success!");
-//        } else {
-//            NSLog(@"upload object failed, error: %@" , task.error);
-//        }
-//        return nil;
-//    }];
+    if (self.uploadNum == 3) {
+        //所有图片上传成功，将路径等数据上传至服务器
+        [self putDataToServer];
+    }
+    //    [putTask continueWithBlock:^id(OSSTask *task) {
+    //        if (!task.error) {
+    //            NSLog(@"upload object success!");
+    //        } else {
+    //            NSLog(@"upload object failed, error: %@" , task.error);
+    //        }
+    //        return nil;
+    //    }];
 }
-//上传图片
-- (void)uploadImage {
+- (void)putDataToServer {//上传到服务器
     
+}
+//返回时间戳
+- (NSString *)timeStamp {
+    NSDate* date = [NSDate dateWithTimeIntervalSinceNow:0];//获取当前时间0秒后的时间
+    NSTimeInterval time=[date timeIntervalSince1970]*1000;// *1000 是精确到毫秒，不乘就是精确到秒
+    NSString *timeString = [NSString stringWithFormat:@"%.0f", time];
+    return timeString;
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -178,5 +189,4 @@
     }
     return _imgsDict;
 }
-
 @end

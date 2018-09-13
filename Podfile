@@ -15,6 +15,8 @@ target 'TieJunLing' do
     pod 'AliyunOSSiOS'
     pod 'MJRefresh'
     pod 'MBProgressHUD'
+    pod 'SVProgressHUD'
+    pod 'IQKeyboardManager'
   
 
   target 'TieJunLingTests' do
