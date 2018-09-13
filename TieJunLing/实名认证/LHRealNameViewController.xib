@@ -121,18 +121,35 @@
                                         <action selector="frontPhoto:" destination="-1" eventType="touchUpInside" id="avw-uR-4rK"/>
                                     </connections>
                                 </button>
-                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="carmara" translatesAutoresizingMaskIntoConstraints="NO" id="DfB-aA-KJx">
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="carmara" translatesAutoresizingMaskIntoConstraints="NO" id="NcH-Al-qKj">
+                                    <rect key="frame" x="47" y="10" width="60" height="60"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="60" id="i0P-Lq-g9u"/>
+                                        <constraint firstAttribute="height" constant="60" id="si6-ll-ldm"/>
+                                    </constraints>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="正面照片" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f94-O4-T7k">
+                                    <rect key="frame" x="46.5" y="75" width="61.5" height="18"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                    <color key="textColor" red="0.53333333333333333" green="0.53333333333333333" blue="0.53333333333333333" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="roun" translatesAutoresizingMaskIntoConstraints="NO" id="DfB-aA-KJx">
                                     <rect key="frame" x="0.0" y="0.0" width="154.5" height="104"/>
                                 </imageView>
                             </subviews>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
+                                <constraint firstItem="f94-O4-T7k" firstAttribute="top" secondItem="NcH-Al-qKj" secondAttribute="bottom" constant="5" id="1b4-oZ-ifd"/>
+                                <constraint firstItem="NcH-Al-qKj" firstAttribute="centerX" secondItem="DfB-aA-KJx" secondAttribute="centerX" id="27q-Yi-opX"/>
                                 <constraint firstAttribute="height" constant="104" id="2YU-7I-1Z7"/>
+                                <constraint firstItem="NcH-Al-qKj" firstAttribute="top" secondItem="f5X-rD-UwU" secondAttribute="top" constant="10" id="AjX-jT-Qft"/>
                                 <constraint firstAttribute="trailing" secondItem="43o-AB-lpX" secondAttribute="trailing" id="Alx-HQ-sIG"/>
                                 <constraint firstItem="DfB-aA-KJx" firstAttribute="top" secondItem="f5X-rD-UwU" secondAttribute="top" id="DhE-XW-Zr4"/>
                                 <constraint firstAttribute="bottom" secondItem="43o-AB-lpX" secondAttribute="bottom" id="JUG-nX-Zlv"/>
                                 <constraint firstAttribute="bottom" secondItem="DfB-aA-KJx" secondAttribute="bottom" id="RJk-9D-KAw"/>
                                 <constraint firstItem="DfB-aA-KJx" firstAttribute="leading" secondItem="f5X-rD-UwU" secondAttribute="leading" id="Ucb-hd-0MM"/>
+                                <constraint firstItem="f94-O4-T7k" firstAttribute="centerX" secondItem="NcH-Al-qKj" secondAttribute="centerX" id="g3y-6R-7bk"/>
                                 <constraint firstItem="43o-AB-lpX" firstAttribute="top" secondItem="f5X-rD-UwU" secondAttribute="top" id="gpx-ds-qXr"/>
                                 <constraint firstAttribute="trailing" secondItem="DfB-aA-KJx" secondAttribute="trailing" id="mRs-XT-eAB"/>
                                 <constraint firstItem="43o-AB-lpX" firstAttribute="leading" secondItem="f5X-rD-UwU" secondAttribute="leading" id="qpk-Dt-6hY"/>
@@ -147,19 +164,36 @@
                                         <action selector="backPhoto:" destination="-1" eventType="touchUpInside" id="4lE-DA-8uB"/>
                                     </connections>
                                 </button>
-                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="carmara" translatesAutoresizingMaskIntoConstraints="NO" id="yui-eF-iUd">
-                                    <rect key="frame" x="0.0" y="0.0" width="154.5" height="104"/>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="反面照片" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gyt-cW-HBa">
+                                    <rect key="frame" x="46" y="75" width="61.5" height="18"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                    <color key="textColor" red="0.53333333329999999" green="0.53333333329999999" blue="0.53333333329999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="carmara" translatesAutoresizingMaskIntoConstraints="NO" id="pae-5H-ui9">
+                                    <rect key="frame" x="47.5" y="10" width="60" height="60"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="60" id="H26-iN-ZHj"/>
+                                        <constraint firstAttribute="width" constant="60" id="YX8-tb-HgZ"/>
+                                    </constraints>
+                                </imageView>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="roun" translatesAutoresizingMaskIntoConstraints="NO" id="yui-eF-iUd">
+                                    <rect key="frame" x="-0.5" y="0.0" width="154.5" height="104"/>
                                 </imageView>
                             </subviews>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
                                 <constraint firstAttribute="bottom" secondItem="ipX-5h-Mmx" secondAttribute="bottom" id="0Jk-Rw-FHD"/>
                                 <constraint firstItem="ipX-5h-Mmx" firstAttribute="top" secondItem="0Wh-X2-hW0" secondAttribute="top" id="0U3-rg-IoO"/>
+                                <constraint firstItem="pae-5H-ui9" firstAttribute="top" secondItem="0Wh-X2-hW0" secondAttribute="top" constant="10" id="6Eb-Hf-Whs"/>
                                 <constraint firstAttribute="trailing" secondItem="yui-eF-iUd" secondAttribute="trailing" id="He6-x2-Zqp"/>
                                 <constraint firstItem="yui-eF-iUd" firstAttribute="top" secondItem="0Wh-X2-hW0" secondAttribute="top" id="IwK-O7-t4V"/>
                                 <constraint firstItem="yui-eF-iUd" firstAttribute="leading" secondItem="0Wh-X2-hW0" secondAttribute="leading" id="Tw1-vj-k4f"/>
+                                <constraint firstItem="gyt-cW-HBa" firstAttribute="top" secondItem="pae-5H-ui9" secondAttribute="bottom" constant="5" id="UNl-A1-f26"/>
+                                <constraint firstItem="gyt-cW-HBa" firstAttribute="centerX" secondItem="pae-5H-ui9" secondAttribute="centerX" id="WeG-Yd-PDq"/>
                                 <constraint firstAttribute="bottom" secondItem="yui-eF-iUd" secondAttribute="bottom" id="fW3-pg-onh"/>
                                 <constraint firstItem="ipX-5h-Mmx" firstAttribute="leading" secondItem="0Wh-X2-hW0" secondAttribute="leading" id="qaT-ml-L5O"/>
+                                <constraint firstItem="pae-5H-ui9" firstAttribute="centerX" secondItem="yui-eF-iUd" secondAttribute="centerX" id="taK-eu-TrC"/>
                                 <constraint firstAttribute="trailing" secondItem="ipX-5h-Mmx" secondAttribute="trailing" id="vIu-ok-OnY"/>
                             </constraints>
                         </view>
@@ -172,21 +206,38 @@
                                         <action selector="handlePhoto:" destination="-1" eventType="touchUpInside" id="G8z-wJ-Adq"/>
                                     </connections>
                                 </button>
-                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="carmara" translatesAutoresizingMaskIntoConstraints="NO" id="eed-vL-yK4">
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="手持照片" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t2p-BL-aBq">
+                                    <rect key="frame" x="47" y="75" width="61.5" height="18"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                    <color key="textColor" red="0.53333333329999999" green="0.53333333329999999" blue="0.53333333329999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IDBG" translatesAutoresizingMaskIntoConstraints="NO" id="noo-JF-qir">
+                                    <rect key="frame" x="47" y="10" width="60" height="60"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="60" id="6Wh-hJ-Uwx"/>
+                                        <constraint firstAttribute="width" constant="60" id="y14-k6-Ax9"/>
+                                    </constraints>
+                                </imageView>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="roun" translatesAutoresizingMaskIntoConstraints="NO" id="eed-vL-yK4">
                                     <rect key="frame" x="0.0" y="0.0" width="154.5" height="104"/>
                                 </imageView>
                             </subviews>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
+                                <constraint firstItem="noo-JF-qir" firstAttribute="top" secondItem="eDN-xZ-1nq" secondAttribute="top" constant="10" id="3Z7-1Q-WuB"/>
                                 <constraint firstItem="eed-vL-yK4" firstAttribute="leading" secondItem="eDN-xZ-1nq" secondAttribute="leading" id="Les-PX-44g"/>
                                 <constraint firstAttribute="bottom" secondItem="SVA-fT-lGK" secondAttribute="bottom" id="XV6-72-41y"/>
+                                <constraint firstItem="t2p-BL-aBq" firstAttribute="top" secondItem="noo-JF-qir" secondAttribute="bottom" constant="5" id="cNv-8y-Rhj"/>
                                 <constraint firstItem="SVA-fT-lGK" firstAttribute="leading" secondItem="eDN-xZ-1nq" secondAttribute="leading" id="fzK-PR-gsl"/>
                                 <constraint firstAttribute="trailing" secondItem="SVA-fT-lGK" secondAttribute="trailing" id="g7A-Zp-0Ce"/>
+                                <constraint firstItem="t2p-BL-aBq" firstAttribute="centerX" secondItem="noo-JF-qir" secondAttribute="centerX" id="h3k-CR-HNc"/>
                                 <constraint firstItem="SVA-fT-lGK" firstAttribute="top" secondItem="eDN-xZ-1nq" secondAttribute="top" id="iff-HW-1oF"/>
                                 <constraint firstAttribute="bottom" secondItem="eed-vL-yK4" secondAttribute="bottom" id="ixd-sm-YRi"/>
                                 <constraint firstAttribute="trailing" secondItem="eed-vL-yK4" secondAttribute="trailing" id="mlG-MP-YW3"/>
                                 <constraint firstAttribute="height" constant="104" id="omk-Hf-txT"/>
                                 <constraint firstItem="eed-vL-yK4" firstAttribute="top" secondItem="eDN-xZ-1nq" secondAttribute="top" id="p0p-Qb-vLQ"/>
+                                <constraint firstItem="noo-JF-qir" firstAttribute="centerX" secondItem="eed-vL-yK4" secondAttribute="centerX" id="uzP-yX-hlr"/>
                             </constraints>
                         </view>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e8c-Ql-11d">
@@ -241,8 +292,10 @@
         </view>
     </objects>
     <resources>
+        <image name="IDBG" width="61" height="61"/>
         <image name="carmara" width="45" height="45"/>
         <image name="realNameBg" width="375" height="108"/>
+        <image name="roun" width="161" height="104"/>
         <image name="shengjibtn" width="345" height="60"/>
     </resources>
 </document>

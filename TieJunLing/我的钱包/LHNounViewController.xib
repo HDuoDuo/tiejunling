@@ -17,6 +17,7 @@
                 <outlet property="moneyLabel" destination="rcQ-Jm-Zlu" id="gtd-Th-r1w"/>
                 <outlet property="myTableView" destination="1BH-vE-vPa" id="gxV-g5-Wfd"/>
                 <outlet property="outMoneyBtn" destination="8D4-dP-AzU" id="Z5B-XM-kUE"/>
+                <outlet property="timeButton" destination="uTS-Io-cRx" id="1fy-dJ-vz5"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>

@@ -16,10 +16,15 @@
                                 };
     [[LHNetworking shareInstance]requestWith:Post URL:@"http://192.168.3.53:8081/app/controller/my/find" parameters:parameter progress:nil success:^(id response) {
         NSDictionary *jsonData = [NSJSONSerialization JSONObjectWithData:response options:NSJSONReadingMutableLeaves error:nil];
-        NSDictionary *dict = jsonData[@"data"];
-        self.popularModel = [LHPopularizeModel setModelWithDict:dict];
-        if (completion) {
-            completion();
+        NSNumber *code = (NSNumber *)jsonData[@"code"];
+        NSLog(@"%@",jsonData[@"msg"]);
+        NSInteger rCode = [code integerValue];
+        if (rCode == 200) {
+            NSDictionary *dict = jsonData[@"data"];
+            self.popularModel = [LHPopularizeModel setModelWithDict:dict];
+            if (completion) {
+                completion();
+            }
         }
     } failure:^(NSError *err) {
         NSLog(@"%@",@"请求失败");

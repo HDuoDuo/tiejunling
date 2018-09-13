@@ -11,13 +11,16 @@
 #import "WXsectionHeaderView.h"
 #import "ZFBsectionHeaderView.h"
 #import "LHTieViewModel.h"
+#import "footerView.h"
 static NSString *cellIdentifierWX = @"LHTieTableViewCell";
 static NSString *cellIdentfierZFB = @"LHZFBTableViewCell";
-@interface LHFetchViewController ()<UITableViewDelegate,UITableViewDataSource>
+@interface LHFetchViewController ()<UITableViewDelegate,UITableViewDataSource,celldDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *myTableView;
 @property(nonatomic,assign)BOOL isWX;
 @property(nonatomic,assign)BOOL isZFB;
 @property(nonatomic,strong)LHTieViewModel *viewModel;
+@property(nonatomic,copy)NSString *recordFilterNum;
+@property(nonatomic,copy)NSString *serverFilterNum;
 @end
 
 @implementation LHFetchViewController
@@ -34,7 +37,16 @@ static NSString *cellIdentfierZFB = @"LHZFBTableViewCell";
 - (void)initUI {
 //    UIView *headerView = [[NSBundle mainBundle]loadNibNamed:@"headerView" owner:nil options:nil].firstObject;
 //    self.myTableView.tableHeaderView = headerView;
-    UIView *footerView = [[NSBundle mainBundle]loadNibNamed:@"footerView" owner:nil options:nil].firstObject;
+    footerView *footerView = [[NSBundle mainBundle]loadNibNamed:@"footerView" owner:nil options:nil].firstObject;
+    footerView.canuseMoney.text = [NSString stringWithFormat:@"可用余额%@.0元",self.canUseLine];
+    __weak typeof(self) weakSelf = self;
+    footerView.block = ^(UITextField *tf){
+        if ([weakSelf.recordFilterNum isEqualToString: weakSelf.serverFilterNum]) {
+            //提现请求
+            NSLog(@"准备提现---%@",tf.text);
+        }
+        
+    };
     self.myTableView.tableFooterView = footerView;
     self.myTableView.allowsSelection = false;
     //注册
@@ -57,19 +69,24 @@ static NSString *cellIdentfierZFB = @"LHZFBTableViewCell";
         NSLog(@"%@",@"请求失败");
     }];
 }
+#pragma celldDelegate
+- (void)filterStr:(NSString *)filterStr {
+    self.recordFilterNum = filterStr;
+    NSLog(@"======%@",filterStr);
+}
+- (void)getFromServerFilter:(NSString *)filterStr {
+    self.serverFilterNum = filterStr;
+}
 #pragma UITableViewDelegate,UITableViewDataSource
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-   
     LHZFBTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentfierZFB forIndexPath:indexPath];
-
+    cell.delegate = self;
     return cell;
 }
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
-    
         ZFBsectionHeaderView *sectionHeaderViewZFB = [[NSBundle mainBundle]loadNibNamed:@"ZFBsectionHeaderView" owner:nil options:nil].firstObject;
         return sectionHeaderViewZFB;
-
 }
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return 1;

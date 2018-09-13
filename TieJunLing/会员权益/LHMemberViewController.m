@@ -32,8 +32,8 @@
     }];
     UIAlertAction *sureAction = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDestructive handler:^(UIAlertAction * _Nonnull action) {
         if (alertVC.textFields.firstObject.text.length == 8) {//邀请码
-            LHPayViewController *payVC = [[LHPayViewController alloc]init];
-            [self.navigationController pushViewController:payVC animated:true];
+            
+            
         }else {
             NSLog(@"邀请码错误");
         }
@@ -44,6 +44,27 @@
     [self presentViewController:alertVC animated:true completion:nil];
     
    
+}
+
+- (void)uploadInviteNum:(NSString *)num {
+    NSDictionary *parameter = @{@"uid":@"108",
+                             @"invitationCode":num,
+                             @"token":@"f5a544f6d3e7cc24b6119a12a701bda6",
+                            };
+    [[LHNetworking shareInstance] requestWith:Post URL:@"http://192.168.3.53:8081/app/controller/my/updateCID" parameters:parameter progress:nil success:^(id response) {
+        NSDictionary *jsonData = [NSJSONSerialization JSONObjectWithData:response options:NSJSONReadingMutableLeaves error:nil];
+        NSNumber *code = (NSNumber *)jsonData[@"code"];
+        NSInteger rCode = [code integerValue];
+        if (rCode == 200) {
+#warning 需要测试
+            LHPayViewController *payVC = [[LHPayViewController alloc]init];
+            [self.navigationController pushViewController:payVC animated:true];
+        }else {
+            
+        }
+    } failure:^(NSError *err) {
+        NSLog(@"%@",@"请求失败");
+    }];
 }
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];

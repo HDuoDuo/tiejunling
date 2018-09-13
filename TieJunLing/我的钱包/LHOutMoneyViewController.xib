@@ -13,6 +13,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LHOutMoneyViewController">
             <connections>
                 <outlet property="moneyLabel" destination="hTb-fN-9vD" id="rUR-sj-OaU"/>
+                <outlet property="outMoneyTF" destination="XhJ-Ne-aWD" id="iQJ-1i-byc"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -24,7 +25,7 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iIb-cD-FlX">
                     <rect key="frame" x="0.0" y="20" width="375" height="250"/>
                     <subviews>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jaE-qY-RDU">
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="outBG" translatesAutoresizingMaskIntoConstraints="NO" id="jaE-qY-RDU">
                             <rect key="frame" x="0.0" y="0.0" width="375" height="250"/>
                         </imageView>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="leT-he-Ehz">
@@ -197,6 +198,7 @@
     </objects>
     <resources>
         <image name="backBtn" width="26" height="26"/>
+        <image name="outBG" width="375" height="257"/>
         <image name="shengjibtn" width="345" height="60"/>
     </resources>
 </document>

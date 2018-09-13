@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface footerView : UIView
-
+@property (weak, nonatomic) IBOutlet UILabel *canuseMoney;
+@property (weak, nonatomic) IBOutlet UITextField *tixianNum;
+@property(nonatomic,copy)void(^block)(UITextField *);
 @end

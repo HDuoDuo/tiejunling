@@ -13,6 +13,7 @@
 @property (weak, nonatomic) IBOutlet UIImageView *backImgView;
 @property (weak, nonatomic) IBOutlet UIImageView *handleImgView;
 @property(nonatomic,strong)UIImageView *currentImgView;
+@property(nonatomic,strong)NSMutableDictionary *imgsDict;
 @end
 
 @implementation LHRealNameViewController
@@ -82,8 +83,10 @@
      * UIImagePickerControllerMediaMetadata // 当数据来源是相机时，此值才有效
      */
     // 从info中将图片取出，并加载到imageView当中
-    self.currentImgView.image= [info objectForKey:UIImagePickerControllerEditedImage];
     
+    UIImage *img = [info objectForKey:UIImagePickerControllerEditedImage];
+//   [self.imgsArr addObject:img];
+    self.currentImgView.image= img;
 }
 #pragma UITextFieldDelegate
 - (BOOL)textFieldShouldReturn:(UITextField *)textField {
@@ -100,14 +103,22 @@
     
 }
 - (IBAction)backPhoto:(UIButton *)sender {
-    
+    self.currentImgView = self.backImgView;
+    [self takePhotos];
 }
 - (IBAction)handlePhoto:(UIButton *)sender {
-    
+    self.currentImgView = self.handleImgView;
+    [self takePhotos];
 }
 - (IBAction)submitBtnTap:(UIButton *)sender {
     //上传图片
-    
+//    if (self.imgsArr.count!=3) {//图片选择不够
+//        return;
+//    }
+    //文件夹auth
+    for (int x = 0; x<3; x++) {
+        
+    }
     NSString *endpoint = @"http://oss-cn-beijing.aliyuncs.com";
     // 移动端建议使用STS方式初始化OSSClient。可以通过sample中STS使用说明了解更多(https://github.com/aliyun/aliyun-oss-ios-sdk/tree/master/DemoByOC)
     id<OSSCredentialProvider> credential = [[OSSPlainTextAKSKPairCredentialProvider alloc]initWithPlainTextAccessKey:@"LTAIAKrXVMhdviNl" secretKey:@"sX5TBlTkHaZ5uvrMvdHSGE7UftqrPf"];
@@ -125,6 +136,25 @@
     if (!putTask.error) {
         NSLog(@"upload object success!");
     }
+    
+    dispatch_group_t group = dispatch_group_create();
+    dispatch_group_async(group, dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        //请求1
+        NSLog(@"Request_1");
+    });
+    dispatch_group_async(group, dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        //请求2
+        NSLog(@"Request_2");
+    });
+    dispatch_group_async(group, dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        //请求3
+        NSLog(@"Request_3");
+    });
+    dispatch_group_notify(group, dispatch_get_main_queue(), ^{
+        //界面刷新
+        NSLog(@"任务均完成，刷新界面");
+    });
+    
 //    [putTask continueWithBlock:^id(OSSTask *task) {
 //        if (!task.error) {
 //            NSLog(@"upload object success!");
@@ -134,18 +164,19 @@
 //        return nil;
 //    }];
 }
+//上传图片
+- (void)uploadImage {
+    
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (NSMutableDictionary *)imgsDict {
+    if (!_imgsDict) {
+        _imgsDict = [NSMutableDictionary dictionary];
+    }
+    return _imgsDict;
 }
-*/
 
 @end
